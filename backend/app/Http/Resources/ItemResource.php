@@ -1,0 +1,27 @@
+<?php
+
+namespace App\Http\Resources;
+
+use App\Models\ruleset\Item;
+use Illuminate\Http\Request;
+use Illuminate\Http\Resources\Json\JsonResource;
+
+/** @mixin Item */
+class ItemResource extends JsonResource
+{
+    /**
+     * @return array<string, mixed>
+     */
+    public function toArray(Request $request): array
+    {
+        return [
+            'id' => $this->id,
+            'name' => $this->name,
+            'item_type' => $this->item_type,
+            'description' => $this->description,
+            'weight' => $this->weight,
+            'value' => $this->value,
+            'armor' => new ArmorResource($this->whenLoaded('armor')),
+        ];
+    }
+}

@@ -1,0 +1,42 @@
+.settings-button {
+    border: none;
+    border-radius: 999px;
+    background-color: #3f9b8f;
+    color: #f2efe8;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.settings-button-primary {
+    align-self: center;
+    margin-top: 8px;
+    padding: 8px 32px;
+    font-size: 0.85rem;
+}
+
+.settings-button-edit {
+    flex-shrink: 0;
+    padding: 6px 18px;
+    font-size: 0.8rem;
+}
+
+.settings-button:hover:not(:disabled) {
+    background-color: #368b80;
+}
+
+.settings-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+@media (max-width: 480px) {
+    .settings-button-primary,
+    .settings-button-edit {
+        min-height: 44px;
+        padding-inline: 20px;
+    }
+
+    .settings-button-edit {
+        width: 100%;
+    }
+}

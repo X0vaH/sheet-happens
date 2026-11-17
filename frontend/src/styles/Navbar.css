@@ -1,0 +1,180 @@
+.navbar {
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    height: clamp(56px, 7vh, 90px);
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(6px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-family: system-ui, sans-serif;
+    border-bottom: 2px solid #cfe0c3;
+    color: #cfe0c3;
+}
+
+.navbar-center {
+    display: flex;
+    align-items: center;
+    gap: clamp(16px, 2.1vw, 40px);
+}
+
+.navbar-brand {
+    font-size: clamp(1.1rem, 1.4vw, 1.7rem);
+    font-weight: 700;
+    color: #cfe0c3;
+    white-space: nowrap;
+}
+
+.navbar-link {
+    font-size: clamp(0.85rem, 0.9vw, 1.1rem);
+    color: #cfe0c3;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.navbar-create-disabled {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    background: none;
+    border: none;
+    font-family: inherit;
+    opacity: 0.7;
+    text-decoration: none;
+    cursor: not-allowed;
+}
+
+.navbar-limit-message {
+    font-size: 0.75rem;
+    color: #f0b8a8;
+}
+
+.navbar-separator {
+    width: 6px;
+    height: 6px;
+    background-color: #cfe0c3;
+    transform: rotate(45deg);
+    flex-shrink: 0;
+}
+
+.navbar-user {
+    display: flex;
+    align-items: center;
+    gap: clamp(8px, 0.8vw, 15px);
+    margin-left: clamp(40px, 10.7vw, 206px);
+    cursor: pointer;
+}
+
+.navbar-username {
+    font-size: clamp(0.85rem, 0.9vw, 1.1rem);
+    color: #cfe0c3;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    white-space: nowrap;
+}
+
+.navbar-user-icon {
+    width: clamp(18px, 1.3vw, 25px);
+    height: clamp(18px, 1.3vw, 25px);
+    flex-shrink: 0;
+}
+
+.navbar-mobile-menu {
+    display: none;
+}
+
+.navbar-menu-button {
+    display: none;
+    background: none;
+    border: none;
+    color: #cfe0c3;
+}
+
+/* ---------- Vue mobile ---------- */
+@media (max-width: 700px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .navbar-link,
+    .navbar-separator,
+    .navbar-user {
+        display: none;
+    }
+
+    .navbar-brand {
+        font-size: 1.3rem;
+    }
+
+    .navbar-menu-button {
+        display: block;
+        font-size: 1.6rem;
+        cursor: pointer;
+    }
+
+    .navbar-mobile-menu {
+        display: flex;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.95);
+        border-bottom: 2px solid #cfe0c3;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translateY(-8px);
+        transition:
+            opacity 0.2s ease,
+            transform 0.2s ease,
+            visibility 0s linear 0.2s;
+    }
+
+    .navbar-mobile-menu.open {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateY(0);
+        transition-delay: 0s;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .navbar-mobile-menu {
+            transition: none;
+        }
+    }
+
+    .navbar-menu-button:focus-visible,
+    .creation-mobile-menu:focus-visible {
+        outline: 3px solid #cfe0c3;
+        outline-offset: 2px;
+    }
+
+    .navbar-mobile-menu :is(a, button) {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 16px 20px;
+        background: none;
+        border: none;
+        border-top: 1px solid rgba(207, 224, 195, 0.25);
+        color: #cfe0c3;
+        font-size: 1rem;
+        text-align: left;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .navbar-mobile-menu :is(a, button):hover,
+    .navbar-mobile-menu :is(a, button):focus-visible {
+        background-color: rgba(207, 224, 195, 0.12);
+    }
+}

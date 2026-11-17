@@ -1,0 +1,320 @@
+/* Figma 220:463 — 1920 x 1080. */
+.creation-background-page {
+    padding-top: 22px;
+    padding-bottom: 32px;
+}
+.creation-background-page .creation-steps {
+    transform: translateX(13px);
+}
+.background-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 466.235px);
+    gap: 83.765px;
+    width: 1016.235px;
+    margin: 100.17px auto 0;
+    transform: translateX(25.12px);
+    align-items: start;
+}
+.background-summary {
+    min-height: 750px;
+    margin-top: 3px;
+    padding: 10px 23px 35px;
+}
+.background-summary h3 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+}
+.background-abilities-title {
+    border-top: 2px dashed #cfe0c3;
+    padding-top: 8px;
+    margin-top: 44px;
+}
+.background-summary .skills-abilities {
+    margin-top: 36px;
+}
+.background-skills-title {
+    border-top: 2px dashed #cfe0c3;
+    padding-top: 12px;
+    margin-top: 60px;
+    white-space: nowrap;
+}
+.background-selected-skills {
+    display: grid;
+    grid-template-columns: 207px minmax(0, 1fr);
+    gap: 9px;
+    margin-top: 25px;
+}
+.background-selected-skills > div {
+    min-height: 67px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid #40798c;
+    border-radius: 5px;
+    background: #cfe0c3;
+    color: #000;
+}
+.background-selected-skills strong {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+}
+.background-selected-skills span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.background-picker {
+    min-height: 350px;
+    padding: 13px 17.235px 28px 24px;
+}
+.background-picker h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    text-align: center;
+    margin-bottom: 31px;
+}
+.background-select {
+    position: relative;
+}
+.background-description {
+    margin-top: 35px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.background-description h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 32px;
+    text-align: center;
+}
+.background-description dl > div {
+    margin-top: 32px;
+}
+.background-description dt {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 6px;
+}
+.background-actions {
+    margin-top: 49px;
+    gap: 18px;
+    transform: translateX(3px);
+}
+.background-actions a {
+    width: 210px;
+    transform: none;
+}
+.background-error {
+    margin-top: 16px;
+    color: #cfe0c3;
+    font-size: 18px;
+    line-height: 28px;
+}
+.background-select select:focus-visible {
+    outline: 3px solid #cfe0c3;
+    outline-offset: 4px;
+}
+.background-layout-with-language {
+    width: min(1478.705px, 100%);
+    grid-template-columns: repeat(3, minmax(0, 466.235px));
+    gap: 40px;
+    transform: none;
+}
+.background-layout-with-language > * {
+    min-width: 0;
+}
+.language-picker > h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    text-align: center;
+    margin-bottom: 31px;
+}
+.language-picker .background-description h3 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    margin-bottom: 32px;
+}
+.language-picker .language-name {
+    margin-bottom: 16px;
+}
+.language-picker select {
+    text-overflow: ellipsis;
+}
+.language-picker .background-description {
+    overflow-wrap: anywhere;
+}
+.language-picker {
+    text-align: center;
+}
+.language-picker > :is(p, h3) {
+    max-width: 340px;
+    margin: 12px auto;
+    line-height: 1.6;
+}
+.language-choice {
+    margin-top: 28px;
+    padding-top: 5px;
+}
+.language-choice > label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.language-picker .background-select {
+    width: min(290px, 90%);
+    margin: 0 auto;
+}
+.language-picker .background-select select {
+    text-align: center;
+    text-align-last: center;
+}
+@supports (appearance: base-select) {
+    .language-picker select,
+    .language-picker select::picker(select) {
+        appearance: base-select;
+    }
+    .language-picker select {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .language-picker select::picker(select) {
+        box-sizing: border-box;
+        width: anchor-size(width);
+        min-width: anchor-size(width);
+        max-width: anchor-size(width);
+        max-height: 280px;
+        overflow: auto;
+        border: 2px solid #7d7d7d;
+        border-radius: 12px;
+        background: #dfdfdf;
+        color: #222;
+        font:
+            400 16px/24px Inter,
+            sans-serif;
+    }
+    .language-picker option {
+        padding: 8px 10px;
+        white-space: normal;
+        overflow-wrap: anywhere;
+        text-align: left;
+    }
+    .language-picker option:checked {
+        background: var(--creation-surface);
+    }
+    .language-picker option:hover,
+    .language-picker option:focus {
+        background: #1f363d;
+        color: #fff;
+    }
+}
+.language-picker .language-choice .background-description {
+    max-width: 340px;
+    margin: 14px auto 0;
+    font-size: 16px;
+    line-height: 26px;
+}
+@media (min-width: 951px) and (max-width: 1450px) {
+    .background-layout.background-layout-with-language {
+        grid-template-columns: repeat(2, minmax(0, 466.235px));
+        justify-content: center;
+        gap: 24px;
+    }
+    .background-layout-with-language > .background-summary {
+        grid-row: span 2;
+    }
+    .background-layout-with-language > .language-picker {
+        grid-column: 2;
+        min-height: 360px;
+    }
+}
+@media (max-width: 1450px) {
+    .creation-background-page .creation-steps {
+        transform: none;
+    }
+}
+@media (max-width: 1150px) {
+    .background-layout {
+        width: 100%;
+        transform: none;
+        grid-template-columns: repeat(2, minmax(0, 466.235px));
+        justify-content: center;
+        gap: 24px;
+    }
+    .background-summary {
+        width: 100%;
+    }
+    .background-summary h3 {
+        font-size: 26px;
+        white-space: normal;
+    }
+    .background-selected-skills {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+@media (max-width: 950px) {
+    .background-layout {
+        grid-template-columns: minmax(0, 466.235px);
+        margin-top: 40px;
+    }
+}
+@media (max-width: 620px) {
+    .language-picker > h2 {
+        font-size: 36px;
+        line-height: 44px;
+    }
+    .background-picker.language-picker {
+        min-height: 0;
+    }
+    .background-summary {
+        min-height: 0;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .background-summary .skills-abilities {
+        grid-template-columns: repeat(3, 80px);
+    }
+    .background-summary h3 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .background-skills-title {
+        margin-top: 40px;
+    }
+    .background-picker {
+        min-height: 0;
+        padding: 20px 16px 28px;
+    }
+    .background-picker h1 {
+        font-size: 36px;
+        line-height: 44px;
+    }
+    .background-description {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .background-description h2 {
+        font-size: 28px;
+    }
+    .background-selected-skills strong {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .background-selected-skills span {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .background-actions {
+        transform: none;
+        gap: 12px;
+    }
+}

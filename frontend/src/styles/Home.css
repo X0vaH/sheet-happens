@@ -1,0 +1,481 @@
+.home {
+    position: relative;
+    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: auto;
+    color: #cfe0c3;
+    font-family: system-ui, sans-serif;
+    background-color: #1f363d;
+}
+
+.home-background {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    z-index: -1;
+}
+
+.home-content {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar : voir src/styles/Navbar.css, propre au component Navbar. */
+
+/* Header */
+.header {
+    width: 100%;
+    height: clamp(92px, 12vh, 140px);
+    flex-shrink: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(6px);
+    border-bottom: 3px solid #cfe0c3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 clamp(24px, 6%, 90px);
+    box-sizing: border-box;
+}
+
+.header-text h1 {
+    margin: 0 0 0.4em 0;
+    font-size: 1.6rem;
+    color: #cfe0c3;
+}
+
+.header-text p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #cfe0c3;
+}
+
+.header-current-page {
+    flex-shrink: 0;
+    padding: 0.9em 2.2em;
+    border: 3px solid #cfe0c3;
+    border-radius: 999px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #cfe0c3;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+/* Section carrousel de personnages */
+.character-carousel-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+    min-height: 0;
+    padding: 2vh 0;
+    box-sizing: border-box;
+}
+
+.character-count-badge {
+    padding: 0.9em 2.4em;
+    border: 3px solid #cfe0c3;
+    border-radius: 999px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #cfe0c3;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+    width: 100%;
+}
+
+.carousel-arrow {
+    background: none;
+    border: none;
+    color: #cfe0c3;
+    font-size: 5rem;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0.5em;
+    flex-shrink: 1;
+    min-width: 0;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.85));
+}
+
+.carousel-arrow:hover {
+    opacity: 0.7;
+}
+
+.carousel-frame {
+    position: relative;
+    width: min(82%, 940px);
+}
+
+.carousel-viewport {
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.55s cubic-bezier(0.65, 0, 0.35, 1);
+    will-change: transform;
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.character-card {
+    position: relative;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(6px);
+    border: 3px solid #cfe0c3;
+    border-radius: 40px;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+    padding: 2.2em 3em;
+    box-sizing: border-box;
+}
+
+.character-card-number {
+    position: absolute;
+    z-index: 1;
+    top: -25px;
+    left: 30px;
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    border: 3px solid #40798c;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #cfe0c3;
+    font-weight: 600;
+}
+
+.character-card-portrait {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6em;
+    width: 220px;
+}
+
+.character-card-portrait img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.character-name {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #cfe0c3;
+}
+
+.character-level {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 5px solid #ffcc00;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #cfe0c3;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.character-card-info {
+    flex: 0 1 380px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+}
+
+.character-card-info h2 {
+    margin: 0 0 0.3em 0;
+    font-size: 1.3rem;
+    color: #cfe0c3;
+}
+
+.character-card-info p {
+    margin: 0;
+    color: #cfe0c3;
+}
+
+.character-actions {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-top: 1em;
+    align-self: flex-start;
+}
+
+/* Sur desktop, les flèches restent celles de part et d'autre de la carte ;
+   celles dupliquées ici ne s'affichent qu'en vue mobile (voir plus bas). */
+.character-actions .carousel-arrow-mobile {
+    display: none;
+}
+
+.character-sheet-button {
+    padding: 0.9em 2.5em;
+    border: none;
+    border-radius: 7px;
+    background-color: #40798c;
+    color: #cfe0c3;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Emplacement sans personnage : même cadre que .character-card, avec une icône « + » centrée.
+   Toute la carte est cliquable ; la hauteur minimale garde une carte de taille normale
+   quand les 5 emplacements sont vides. */
+.character-card-empty {
+    min-height: 320px;
+    color: #cfe0c3;
+    font: inherit;
+    cursor: pointer;
+}
+
+.character-card-empty-icon {
+    width: 72px;
+    height: 72px;
+    opacity: 0.4;
+    transition: opacity 0.2s ease;
+}
+
+.character-card-empty:hover .character-card-empty-icon,
+.character-card-empty:focus-visible .character-card-empty-icon {
+    opacity: 0.9;
+}
+
+.carousel-dots {
+    display: flex;
+    align-items: center;
+    gap: 1.2em;
+}
+
+.carousel-dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: none;
+    background-color: #d9d9d9;
+    padding: 0;
+    cursor: pointer;
+}
+
+.carousel-dot-active {
+    width: 14px;
+    height: 14px;
+    background-color: #70a9a1;
+    border: 3px solid #40798c;
+}
+
+/* Quand la hauteur visible est réduite (zoom du navigateur, petite fenêtre),
+   on arrête de centrer verticalement pour éviter que la carte ne remonte
+   par-dessus le badge/header : elle s'empile depuis le haut et peut défiler. */
+@media (max-height: 640px), (max-width: 1100px) {
+    .character-carousel-section {
+        justify-content: flex-start;
+    }
+
+    .header-text h1 {
+        font-size: clamp(1.05rem, 4vh, 1.6rem);
+    }
+
+    .header-text p {
+        font-size: clamp(0.75rem, 2.2vh, 0.95rem);
+    }
+
+    .header-current-page {
+        padding: clamp(0.5em, 2vh, 0.9em) clamp(1.2em, 3vw, 2.2em);
+    }
+
+    .character-count-badge {
+        padding: clamp(0.5em, 2vh, 0.9em) clamp(1.2em, 3vw, 2.4em);
+    }
+
+    .carousel-arrow {
+        font-size: clamp(1.5rem, min(6vh, 6vw), 5rem);
+        padding: clamp(0.2em, 1vw, 0.5em);
+    }
+
+    .character-card {
+        gap: clamp(1em, min(4vh, 4vw), 3em);
+        padding: clamp(0.8em, min(4vh, 3vw), 2.2em) clamp(1em, 3vw, 3em);
+    }
+
+    .character-card-portrait {
+        width: clamp(140px, min(26vh, 24vw), 220px);
+    }
+
+    .character-card-portrait img {
+        width: clamp(80px, min(18vh, 16vw), 180px);
+        height: clamp(80px, min(18vh, 16vw), 180px);
+    }
+
+    .character-level {
+        width: clamp(70px, min(14vh, 12vw), 110px);
+        height: clamp(70px, min(14vh, 12vw), 110px);
+    }
+
+    .character-card-info {
+        flex: 0 1 clamp(200px, 34vw, 380px);
+    }
+
+    .character-card-info h2 {
+        font-size: clamp(1rem, 3vh, 1.3rem);
+    }
+
+    .character-card-info p {
+        font-size: clamp(0.8rem, 2.2vh, 1rem);
+    }
+
+    .character-sheet-button {
+        padding: clamp(0.5em, 2vh, 0.9em) clamp(1.2em, 3vw, 2.5em);
+    }
+}
+
+/* ---------- Vue mobile ---------- */
+@media (max-width: 700px) {
+    .header {
+        align-items: flex-start;
+        padding: 1.2em 1em;
+        gap: 0.8em;
+    }
+
+    .header-text h1 {
+        font-size: 1.15rem;
+    }
+
+    .header-text p {
+        font-size: 0.75rem;
+    }
+
+    .header-current-page {
+        padding: 0.6em 1.3em;
+        font-size: 0.8rem;
+    }
+
+    .character-carousel-section {
+        gap: 1.4vh;
+        padding: 1.4vh 0;
+    }
+
+    .character-count-badge {
+        padding: 0.6em 1.5em;
+        font-size: 0.85rem;
+    }
+
+    .carousel {
+        gap: 0;
+    }
+
+    .carousel-frame {
+        width: 84%;
+    }
+
+    /* Les flèches latérales sortiraient de l'écran en vue mobile : on les
+     cache et on affiche à la place la paire dupliquée à côté du bouton
+     "Voir la fiche", à l'intérieur de la carte (voir .character-actions). */
+    .carousel-arrow-desktop {
+        display: none;
+    }
+
+    .character-actions .carousel-arrow-mobile {
+        display: inline-flex;
+        font-size: 1.5rem;
+        padding: 0.2em;
+    }
+
+    .character-card {
+        flex-direction: column;
+        gap: 1em;
+        padding: 1.6em 1.3em;
+        border-radius: 36px;
+    }
+
+    .character-card-number {
+        top: -16px;
+        left: 14px;
+        width: 30px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+
+    .character-card-portrait {
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        gap: 0.8em;
+    }
+
+    .character-card-portrait img {
+        width: 56px;
+        height: 56px;
+    }
+
+    .character-name {
+        font-size: 1rem;
+    }
+
+    .character-level {
+        width: 56px;
+        height: 56px;
+        border-width: 3px;
+        font-size: 0.65rem;
+    }
+
+    .character-card-info {
+        width: 100%;
+        flex: 1 1 auto;
+        align-items: center;
+        text-align: center;
+        gap: 0.5em;
+    }
+
+    .character-card-info h2 {
+        font-size: 1.05rem;
+    }
+
+    .character-card-info p {
+        font-size: 0.85rem;
+    }
+
+    .character-actions {
+        align-self: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .character-sheet-button {
+        padding: 0.7em 1.6em;
+        font-size: 0.9rem;
+    }
+}

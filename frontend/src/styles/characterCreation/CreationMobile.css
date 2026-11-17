@@ -1,0 +1,752 @@
+.creation-mobile-header {
+    display: none;
+}
+.creation-page > .navbar {
+    width: calc(100% + 48px);
+    margin: -28px -24px 28px;
+}
+@media (min-width: 621px) and (max-width: 760px) {
+    .creation-page > .navbar {
+        width: calc(100% + 32px);
+        margin: -20px -16px 20px;
+    }
+}
+
+/* Figma mobile: 316:507, 316:529, 316:607 and 316:757 (402px wide).
+   Scoped to the four supplied screens; desktop styles stay in their existing files. */
+@media (max-width: 620px) {
+    .creation-page > .navbar {
+        display: none;
+    }
+    .creation-page.creation-mobile-design {
+        padding: 0 7px 30px;
+        min-height: 100svh;
+    }
+    .creation-mobile-design .creation-mobile-header {
+        position: relative;
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 70px;
+        margin: 0 -7px;
+        padding: 0 15px 0 7px;
+        background: rgb(0 0 0 / 75%);
+    }
+    .creation-mobile-brand {
+        color: #cfe0c3;
+        text-decoration: none;
+        font:
+            600 clamp(24px, 7.96vw, 32px)/40px Inter,
+            sans-serif;
+        white-space: nowrap;
+    }
+    .creation-mobile-menu {
+        display: grid;
+        place-items: center;
+        flex-shrink: 0;
+        width: 44px;
+        height: 44px;
+        margin-right: -3px;
+        padding: 0;
+        background: none;
+        border: 0;
+        cursor: pointer;
+    }
+    .creation-mobile-menu span {
+        color: #cfe0c3;
+        font-size: 32px;
+        line-height: 1;
+    }
+    .creation-mobile-menu img {
+        width: 38px;
+        height: 38px;
+    }
+    .creation-mobile-design .creation-steps {
+        width: 100%;
+        margin-top: 12px;
+        transform: none;
+    }
+    .creation-mobile-design .creation-steps ol,
+    .creation-wizard-page.creation-mobile-design .creation-steps ol {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 6px;
+        margin: 0;
+        padding: 0;
+    }
+    .creation-mobile-design .creation-steps li {
+        height: 28px;
+        border-radius: 5px;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .creation-page.creation-mobile-design.creation-compact-type
+        .creation-steps
+        li {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .creation-mobile-header :focus-visible {
+        outline: 3px solid #cfe0c3;
+        outline-offset: 2px;
+    }
+    .creation-mobile-design .creation-card {
+        width: min(388px, 100%);
+        min-height: 0;
+        margin: 24px auto 0;
+        padding: 14px 23px 32px;
+    }
+    .creation-mobile-design .creation-card h1 {
+        font:
+            600 32px/40px Inter,
+            sans-serif;
+        margin-bottom: 56px;
+        transform: none;
+    }
+    .creation-mobile-design .creation-card form {
+        transform: none;
+    }
+    .creation-mobile-design .creation-card label {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 21px;
+    }
+    .creation-mobile-design .creation-card input {
+        width: 320px;
+        height: 48px;
+        padding-inline: 21px;
+    }
+    .creation-mobile-design .creation-feedback {
+        min-height: 0;
+        padding-top: 54px;
+    }
+    .creation-mobile-design .creation-error {
+        width: calc(100% + 12px);
+        max-width: calc(100% + 12px);
+        flex-shrink: 0;
+        min-height: 45px;
+        padding: 5px 8px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .creation-mobile-design .creation-continue {
+        width: 153px;
+        min-height: 35px;
+    }
+    .creation-mobile-design .race-summary {
+        width: min(352px, 100%);
+        margin: 0 auto;
+        padding: 3px 16px 14px;
+    }
+    .creation-mobile-design .race-summary h2 {
+        font-size: 48px;
+        line-height: 56px;
+    }
+    .creation-mobile-design .race-summary p {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .creation-mobile-design .race-summary-choice {
+        margin-top: 32px;
+    }
+    .creation-mobile-design .race-layout {
+        width: min(388px, 100%);
+        margin: 22px auto 0;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 24px;
+        transform: none;
+    }
+    .creation-mobile-design .race-layout > .race-summary {
+        min-height: 0;
+    }
+    .creation-mobile-design .race-content {
+        gap: 33px;
+    }
+    .creation-mobile-design .race-picker {
+        min-height: 0;
+        padding: 10px 20px 30px;
+    }
+    .creation-mobile-design .race-picker h1 {
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 600;
+        white-space: normal;
+    }
+    .creation-mobile-design .race-options {
+        width: min(317px, 100%);
+        margin: 11px auto 0;
+        grid-template-columns: repeat(2, minmax(0, 148px));
+        justify-content: space-between;
+        gap: 29px 12px;
+    }
+    .creation-mobile-design .race-options button {
+        min-height: 45px;
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .creation-mobile-design .race-description {
+        min-height: 0;
+        padding: 15px 18px 24px;
+    }
+    .creation-mobile-design .race-description h2 {
+        font-size: 48px;
+        line-height: 56px;
+        margin-bottom: 0;
+    }
+    .creation-mobile-design .race-description dl > div {
+        margin-top: 32px;
+    }
+    .creation-mobile-design .race-actions {
+        width: min(340px, 100%);
+        margin: 47px auto 0;
+        transform: none;
+        gap: 12px;
+    }
+    .creation-mobile-design .race-actions a,
+    .creation-mobile-design .race-actions button {
+        width: 50%;
+        min-height: 51px;
+        font-size: 20px;
+        line-height: 28px;
+        transform: none;
+    }
+
+    .creation-class-page.creation-mobile-design {
+        min-height: 100svh;
+    }
+    .creation-mobile-design .class-layout {
+        width: min(390px, 100%);
+        grid-template-columns: minmax(0, 1fr);
+        margin: 22px auto 0;
+        gap: 18px;
+    }
+    .creation-mobile-design .class-summary {
+        min-height: 0;
+    }
+    .creation-mobile-design .class-content {
+        width: 100%;
+        margin: 0;
+        gap: 46px;
+    }
+    .creation-mobile-design .class-content .race-picker {
+        padding-top: 10px;
+    }
+    .creation-mobile-design .class-content .race-options {
+        margin-top: 13px;
+        row-gap: 19px;
+    }
+    .creation-mobile-design .class-content .race-options button:nth-child(4) {
+        grid-row: 3;
+        grid-column: 1;
+    }
+    .creation-mobile-design .class-content .race-options button:nth-child(5) {
+        grid-row: 2;
+        grid-column: 2;
+    }
+    .creation-mobile-design .class-description {
+        min-height: 0;
+        padding: 13px 28px 30px;
+    }
+    .creation-mobile-design .class-description h2 {
+        font-size: 48px;
+        line-height: 56px;
+        margin-bottom: 8px;
+    }
+    .creation-mobile-design .class-details {
+        grid-template-columns: minmax(0, 1fr);
+        margin-top: 32px;
+        gap: 32px;
+    }
+    .creation-mobile-design .class-details > div > div {
+        margin-top: 32px;
+    }
+    .creation-mobile-design .class-details ul {
+        padding-left: 30px;
+    }
+    .creation-mobile-design .class-equipment {
+        width: 100%;
+        margin: 0;
+        min-height: 608px;
+        padding: 12px 11px 24px;
+    }
+    .creation-mobile-design .class-equipment h2 {
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 600;
+        margin-bottom: 21px;
+    }
+    .creation-mobile-design .class-equipment legend {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .creation-mobile-design .equipment-options {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+    .creation-mobile-design .equipment-option button {
+        min-height: 50px;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        overflow-wrap: anywhere;
+    }
+    .creation-mobile-design .equipment-tooltip {
+        width: 178px;
+        max-width: calc(100vw - 36px);
+        min-height: 91px;
+        top: 100%;
+        left: 0;
+        padding: 2px 6px;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .creation-mobile-design .equipment-tooltip strong {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .creation-mobile-design .equipment-option:last-child .equipment-tooltip {
+        left: auto;
+        right: 0;
+    }
+    .creation-mobile-design .class-actions {
+        margin-top: 20px;
+    }
+
+    .creation-abilities-page.creation-mobile-design {
+        min-height: 100svh;
+    }
+    .creation-mobile-design .abilities-layout {
+        width: min(392px, 100%);
+        margin: 22px auto 0;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+        transform: none;
+    }
+    .creation-mobile-design .abilities-summary {
+        width: 100%;
+    }
+    .creation-mobile-design .abilities-identity {
+        min-height: 0;
+    }
+    .creation-mobile-design .abilities-derived {
+        width: 100%;
+        margin-top: 21px;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 7px;
+    }
+    .creation-mobile-design .abilities-derived > div {
+        min-height: 88px;
+        padding: 4px 0;
+        font-size: clamp(11px, 3.48vw, 14px);
+        line-height: 20px;
+    }
+    .creation-mobile-design .abilities-derived strong {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .creation-mobile-design .abilities-method {
+        width: 100%;
+        margin: 0;
+        min-height: 0;
+        padding: 14px 20px 23px;
+    }
+    .creation-mobile-design .abilities-method h2 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .creation-mobile-design .abilities-method .race-options {
+        width: 100%;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+        margin-top: 24px;
+    }
+    .creation-mobile-design .abilities-method .race-options button {
+        font-size: 20px;
+    }
+    .creation-mobile-design .abilities-grid {
+        grid-template-columns: repeat(2, minmax(0, 139px));
+        justify-content: space-between;
+        gap: 46px 20px;
+        margin: 20px 30px 0;
+    }
+    .creation-mobile-design .ability-card {
+        height: 163px;
+        padding-top: 12px;
+    }
+    .creation-mobile-design .ability-card label {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .creation-mobile-design .ability-card input {
+        width: 95px;
+        max-width: 85%;
+        height: 65px;
+        margin-top: 15px;
+    }
+    .creation-mobile-design .ability-modifier {
+        top: 136px;
+        width: 79px;
+        height: 42px;
+    }
+    .creation-mobile-design .ability-modifier img {
+        width: 79px;
+        height: 42px;
+    }
+    .creation-mobile-design .ability-card:nth-child(3) {
+        grid-row: 3;
+        grid-column: 2;
+    }
+    .creation-mobile-design .ability-card:nth-child(4) {
+        grid-row: 2;
+        grid-column: 1;
+    }
+    .creation-mobile-design .ability-card:nth-child(5) {
+        grid-row: 2;
+        grid-column: 2;
+    }
+    .creation-mobile-design .ability-card:nth-child(6) {
+        grid-row: 3;
+        grid-column: 1;
+    }
+    .creation-mobile-design .abilities-actions {
+        margin-top: 40px;
+    }
+}
+@media (max-width: 370px) {
+    .creation-mobile-design .abilities-method .race-options {
+        gap: 8px;
+    }
+    .creation-mobile-design .abilities-method .race-options button {
+        font-size: 16px;
+    }
+    .creation-mobile-design .abilities-grid {
+        margin-inline: 18px;
+        gap: 46px 16px;
+    }
+    .creation-mobile-design .class-equipment legend {
+        font-size: 20px;
+    }
+}
+
+/* Additional mobile frames: 323:955, 323:1209, 323:1366, 323:1532. */
+.creation-overview-stats {
+    display: none;
+}
+@media (max-width: 620px) {
+    .creation-mobile-design
+        :is(
+            .skills-layout,
+            .spells-layout,
+            .background-layout,
+            .summary-layout
+        ) {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 22px auto 0;
+        gap: 22px;
+        transform: none;
+    }
+    .creation-mobile-design
+        :is(.skills-summary, .spells-summary, .background-summary) {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        min-height: 0;
+    }
+    .creation-mobile-design :is(.skills-identity, .summary-details) {
+        display: contents;
+    }
+    .creation-mobile-design :is(.skills-identity, .background-summary)::before {
+        display: none;
+    }
+    .creation-mobile-design .creation-identity-panel {
+        position: relative;
+        isolation: isolate;
+        width: min(352px, 100%);
+        min-height: 0;
+        margin: 0 auto;
+        padding: 3px 10px 14px;
+        text-align: center;
+        order: 0;
+    }
+    .creation-mobile-design
+        :is(
+            .creation-identity-panel,
+            .creation-abilities-panel,
+            .creation-selected-skills
+        )::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        inset: 0;
+        border: 3px solid #cfe0c3;
+        border-radius: 40px;
+        background: #000;
+        opacity: 0.75;
+    }
+    .creation-mobile-design .creation-identity-panel :is(h1, h2) {
+        font-size: 48px;
+        line-height: 56px;
+        font-weight: 700;
+        overflow-wrap: anywhere;
+    }
+    .creation-mobile-design .creation-identity-panel p {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .creation-mobile-design .creation-identity-panel .race-summary-choice {
+        margin-top: 32px;
+    }
+    .creation-mobile-design .creation-overview-stats {
+        display: block;
+        order: 1;
+    }
+    .creation-mobile-design
+        :is(.skills-summary, .creation-overview-stats)
+        .abilities-derived {
+        order: 1;
+        width: 100%;
+        margin: 21px 0 22px;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 7px;
+    }
+    .creation-mobile-design
+        :is(.skills-summary, .creation-overview-stats)
+        .abilities-derived
+        > div {
+        min-height: 88px;
+        padding: 4px 0;
+        font-size: clamp(11px, 3.48vw, 14px);
+        line-height: 20px;
+    }
+    .creation-mobile-design .creation-abilities-panel {
+        position: relative;
+        isolation: isolate;
+        order: 2;
+        width: min(382px, 100%);
+        min-height: 0;
+        margin: 0 auto;
+        padding: 7px 20px 30px;
+        text-align: center;
+    }
+    .creation-mobile-design .creation-abilities-panel h3 {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .creation-mobile-design .creation-abilities-panel .skills-abilities {
+        width: 100%;
+        margin: 14px auto 0;
+        grid-template-columns: repeat(2, minmax(0, 138px));
+        gap: 46px 20px;
+    }
+    .creation-mobile-design .skill-ability {
+        height: 139px;
+        padding-top: 4px;
+    }
+    .creation-mobile-design .skill-ability > span {
+        font-size: clamp(16px, 4.98vw, 20px);
+        line-height: 28px;
+        font-weight: 600;
+    }
+    .creation-mobile-design .skill-ability > strong {
+        width: 94px;
+        max-width: 85%;
+        height: 55px;
+        margin-top: 12px;
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 600;
+    }
+    .creation-mobile-design .skill-ability-modifier {
+        width: 78px;
+        height: 37px;
+        top: 116px;
+        left: calc(50% - 39px);
+    }
+    .creation-mobile-design .skill-ability-modifier img {
+        width: 78px;
+        height: 37px;
+    }
+    .creation-mobile-design .skill-ability-modifier span {
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 600;
+    }
+    .creation-mobile-design .skill-ability:nth-child(3) {
+        grid-row: 3;
+        grid-column: 1;
+    }
+    .creation-mobile-design .skill-ability:nth-child(4) {
+        grid-row: 2;
+        grid-column: 1;
+    }
+    .creation-mobile-design .skill-ability:nth-child(5) {
+        grid-row: 2;
+        grid-column: 2;
+    }
+    .creation-mobile-design .skill-ability:nth-child(6) {
+        grid-row: 3;
+        grid-column: 2;
+    }
+    .creation-mobile-design :is(.skills-picker, .spells-picker) {
+        width: 100%;
+        margin: 0;
+        padding: 10px 7px 28px;
+        min-height: 0;
+    }
+    .creation-mobile-design .skills-picker h1 {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 16px;
+    }
+    .creation-mobile-design .skills-choices {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px 14px;
+    }
+    .creation-mobile-design .skills-choices button {
+        min-height: 78px;
+        padding: 5px 3px;
+        justify-content: flex-start;
+    }
+    .creation-mobile-design .skills-choices strong {
+        font-size: 20px;
+        line-height: 28px;
+        overflow-wrap: anywhere;
+    }
+    .creation-mobile-design .skills-choices span {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .creation-mobile-design .skills-count {
+        margin-top: 16px;
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .creation-mobile-design
+        :is(.skills-actions, .background-actions, .summary-actions) {
+        margin-top: 14px;
+    }
+    .creation-skills-page.creation-mobile-design {
+        min-height: 100svh;
+    }
+    .creation-mobile-design .spells-layout {
+        gap: 10px;
+    }
+    .creation-mobile-design .spells-picker {
+        min-height: 0;
+    }
+    .creation-mobile-design .spells-picker h2 {
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 16px;
+    }
+    .creation-mobile-design .spells-level-one h2 {
+        margin-bottom: 0;
+    }
+    .creation-mobile-design .spells-subtitle {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 8px;
+    }
+    .creation-mobile-design .spells-picker .skills-choices {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px 14px;
+    }
+    .creation-mobile-design .spells-picker .skills-choices button {
+        min-height: 81px;
+    }
+    .creation-mobile-design .spells-picker .skills-choices strong {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .creation-mobile-design .spells-picker .skills-count {
+        margin-top: auto;
+        padding-top: 16px;
+    }
+    .creation-spells-page.creation-mobile-design {
+        min-height: 100svh;
+    }
+    .creation-background-page.creation-mobile-design {
+        min-height: 100svh;
+    }
+    .creation-mobile-design .background-picker {
+        width: 100%;
+    }
+    .creation-mobile-design .creation-selected-skills {
+        position: relative;
+        isolation: isolate;
+        order: 4;
+        width: min(382px, 100%);
+        margin: 22px auto 0;
+        padding: 12px 12px 16px;
+        text-align: center;
+    }
+    .creation-mobile-design .creation-selected-skills .background-skills-title {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        white-space: normal;
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .creation-mobile-design
+        .creation-selected-skills
+        .background-selected-skills
+        > div {
+        min-width: 0;
+        padding: 6px;
+        overflow-wrap: anywhere;
+    }
+    .creation-mobile-design .background-selected-skills {
+        margin: 12px 0;
+    }
+    .creation-mobile-design .summary-details > .abilities-derived {
+        display: none;
+    }
+    .creation-mobile-design .summary-saves {
+        min-height: 0;
+    }
+    .creation-mobile-design .summary-tabs {
+        width: 100%;
+        min-height: 0;
+        margin: 0;
+        padding: 16px 8px 10px;
+    }
+    .creation-mobile-design .summary-tabs [role='tablist'] {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        padding-bottom: 12px;
+    }
+    .creation-mobile-design .summary-tabs [role='tab'] {
+        min-height: 59px;
+    }
+    .creation-mobile-design .summary-saves {
+        order: 4;
+        width: 100%;
+    }
+    .creation-summary-page.creation-mobile-design {
+        min-height: 100svh;
+    }
+}
+
+@media (max-width: 620px) {
+    .creation-mobile-design .spells-summary.skills-summary .abilities-derived {
+        margin-top: 21px;
+    }
+    .creation-mobile-design .creation-abilities-panel {
+        padding-bottom: 24px;
+    }
+    .creation-mobile-design .creation-abilities-panel .skills-abilities {
+        row-gap: 34px;
+    }
+    .creation-mobile-design .skill-ability:nth-child(4),
+    .creation-mobile-design .skill-ability:nth-child(5) {
+        transform: translateY(12px);
+    }
+}

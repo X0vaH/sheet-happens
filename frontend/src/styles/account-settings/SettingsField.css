@@ -1,0 +1,21 @@
+.settings-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    min-width: 0;
+    color: #cfe0c3;
+    font-size: 0.9rem;
+}
+
+.settings-field-text {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 480px) {
+    .settings-field {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}

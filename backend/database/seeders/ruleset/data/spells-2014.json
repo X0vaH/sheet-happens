@@ -1,0 +1,2659 @@
+[
+    {
+        "index":  "acid-arrow",
+        "name":  "Flèche acide",
+        "spell_level":  2,
+        "school":  "evocation",
+        "casting_time":  "1 action",
+        "range":  "27 mètres",
+        "duration":  "Instantanée",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Une feuille de rhubarbe en poudre et un estomac de vipère.",
+        "description":  "Une attaque de sort à distance inflige 4d4 dégâts d’acide puis 2d4 au tour suivant. En cas d’échec, seuls les dégâts initiaux sont réduits de moitié.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "acid-splash",
+        "name":  "Aspersion acide",
+        "spell_level":  0,
+        "school":  "conjuration",
+        "casting_time":  "1 action",
+        "range":  "18 mètres",
+        "duration":  "Instantanée",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Une ou deux créatures proches subissent 1d6 dégâts d’acide si elles ratent leur sauvegarde de Dextérité. Les dégâts augmentent avec votre niveau.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "aid",
+        "name":  "Aide",
+        "spell_level":  2,
+        "school":  "abjuration",
+        "casting_time":  "1 action",
+        "range":  "9 mètres",
+        "duration":  "8 heures",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "un petit bout de vêtement blanc.",
+        "description":  "Jusqu’à trois créatures gagnent 5 points de vie actuels et maximaux pendant 8 heures. Le bonus augmente de 5 par niveau d’emplacement supérieur.",
+        "classes":  [
+                        "Clerc"
+                    ]
+    },
+    {
+        "index":  "alarm",
+        "name":  "Alarme",
+        "spell_level":  1,
+        "school":  "abjuration",
+        "casting_time":  "1 minute",
+        "range":  "9 mètres",
+        "duration":  "8 heures",
+        "concentration":  false,
+        "ritual":  true,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Une petite clochette et un morceau de fil d\u0027argent fin.",
+        "description":  "Une porte, une fenêtre ou une zone surveillée déclenche une alerte mentale ou sonore en cas d’intrusion. Vous pouvez exclure certaines créatures."
+    },
+    {
+        "index":  "alter-self",
+        "name":  "Modification d\u0027apparence",
+        "spell_level":  2,
+        "school":  "transmutation",
+        "casting_time":  "1 action",
+        "range":  "Personnelle",
+        "duration":  "jusqu\u0027à 1 heure",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Vous pouvez respirer sous l’eau, changer d’apparence ou créer une arme naturelle magique. Vous pouvez changer d’option avec une action pendant le sort.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "animate-dead",
+        "name":  "Animation des morts",
+        "spell_level":  3,
+        "school":  "necromancy",
+        "casting_time":  "1 minute",
+        "range":  "3 mètres",
+        "duration":  "Instantanée",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Une goutte de sang, un morceau de chair et une pincée de poussière d\u0027os.",
+        "description":  "Vous animez un cadavre ou des ossements en zombie ou squelette sous votre contrôle. Renouvelez le sort pour conserver ce contrôle.",
+        "classes":  [
+                        "Clerc",
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "arcane-lock",
+        "name":  "Verrou magique",
+        "spell_level":  2,
+        "school":  "abjuration",
+        "casting_time":  "1 action",
+        "range":  "Contact",
+        "duration":  "Jusqu\u0027à dissipation",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "De la poudre d\u0027or d\u0027une valeur d\u0027au moins de 25 po, que le sort consomme",
+        "description":  "Vous verrouillez magiquement un objet fermé. Vous pouvez désigner des créatures autorisées à l’ouvrir et définir un mot de passe.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "arcanists-magic-aura",
+        "name":  "Aura magique de l’arcaniste",
+        "spell_level":  2,
+        "school":  "illusion",
+        "casting_time":  "1 action",
+        "range":  "Contact",
+        "duration":  "24 heures",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Un petit carré de soie.",
+        "description":  "Vous modifiez l’aura magique d’une créature ou d’un objet pour tromper les sorts de détection. Vous pouvez aussi masquer son type apparent.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "augury",
+        "name":  "Augure",
+        "spell_level":  2,
+        "school":  "divination",
+        "casting_time":  "1 minute",
+        "range":  "Personnelle",
+        "duration":  "Instantanée",
+        "concentration":  false,
+        "ritual":  true,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Jeu de bâtonnets ou d\u0027osselets spécialement inscrits valant au moins 25 po",
+        "description":  "Vous recevez un présage concernant les conséquences d’une action envisagée dans les 30 prochaines minutes. La réponse indique bonheur, malheur, les deux ou rien.",
+        "classes":  [
+                        "Clerc"
+                    ]
+    },
+    {
+        "index":  "bane",
+        "name":  "Imprécation",
+        "spell_level":  1,
+        "school":  "enchantment",
+        "casting_time":  "1 action",
+        "range":  "9 mètres",
+        "duration":  "Jusqu\u0027à 1 minute",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "une goutte de sang",
+        "description":  "Jusqu’à trois créatures ratant leur sauvegarde de Charisme soustraient 1d4 à leurs jets d’attaque et de sauvegarde. D’autres cibles sont possibles avec un emplacement supérieur.",
+        "classes":  [
+                        "Clerc"
+                    ]
+    },
+    {
+        "index":  "beacon-of-hope",
+        "name":  "Lueur d’espoir",
+        "spell_level":  3,
+        "school":  "abjuration",
+        "casting_time":  "1 action",
+        "range":  "9 mètres",
+        "duration":  "Jusqu\u0027à 1 minute",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Les créatures choisies ont l’avantage aux sauvegardes de Sagesse et contre la mort. Elles récupèrent le maximum de points de vie lors de soins.",
+        "classes":  [
+                        "Clerc"
+                    ]
+    },
+    {
+        "index":  "bestow-curse",
+        "name":  "Malédiction",
+        "spell_level":  3,
+        "school":  "necromancy",
+        "casting_time":  "1 action",
+        "range":  "Contact",
+        "duration":  "Jusqu\u0027à 1 minute",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Vous maudissez une créature qui rate sa sauvegarde de Sagesse. Choisissez un effet, comme un désavantage, des dégâts supplémentaires ou l’impossibilité d’agir.",
+        "classes":  [
+                        "Clerc",
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "bless",
+        "name":  "Bénédiction",
+        "spell_level":  1,
+        "school":  "enchantment",
+        "casting_time":  "1 action",
+        "range":  "9 mètres",
+        "duration":  "Jusqu\u0027à 1 minute",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Une aspersion d\u0027eau bénite.",
+        "description":  "Jusqu’à trois créatures ajoutent 1d4 à leurs jets d’attaque et de sauvegarde. Vous pouvez bénir davantage de cibles avec un emplacement supérieur.",
+        "classes":  [
+                        "Clerc"
+                    ]
+    },
+    {
+        "index":  "blindness-deafness",
+        "name":  "Cécité/Surdité",
+        "spell_level":  2,
+        "school":  "necromancy",
+        "casting_time":  "1 action",
+        "range":  "9 mètres",
+        "duration":  "1 minute",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  false,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Une créature qui rate sa sauvegarde de Constitution devient aveugle ou sourde. Elle peut retenter sa sauvegarde à la fin de chaque tour.",
+        "classes":  [
+                        "Clerc",
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "blink",
+        "name":  "Clignotement",
+        "spell_level":  3,
+        "school":  "transmutation",
+        "casting_time":  "1 action",
+        "range":  "Personnelle",
+        "duration":  "1 minute",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "À la fin de vos tours, un résultat de 11 ou plus sur un d20 vous transporte dans le plan Éthéré. Vous revenez au tour suivant.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "blur",
+        "name":  "Flou",
+        "spell_level":  2,
+        "school":  "illusion",
+        "casting_time":  "1 action",
+        "range":  "Personnelle",
+        "duration":  "Jusqu\u0027à 1 minute",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  false,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Votre silhouette devient floue, imposant un désavantage aux attaques contre vous. Les créatures qui n’utilisent pas la vue ne sont pas affectées.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "burning-hands",
+        "name":  "Mains brûlantes",
+        "spell_level":  1,
+        "school":  "evocation",
+        "casting_time":  "1 action",
+        "range":  "Personnelle",
+        "duration":  "Instantanée",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Un cône de flammes inflige 3d6 dégâts de feu, réduits de moitié par une sauvegarde de Dextérité réussie. Les dégâts augmentent avec l’emplacement.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "calm-emotions",
+        "name":  "Apaisement des émotions",
+        "spell_level":  2,
+        "school":  "enchantment",
+        "casting_time":  "1 action",
+        "range":  "18 mètres",
+        "duration":  "Jusqu\u0027à 1 minute",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Vous apaisez ou modifiez les émotions des humanoïdes dans une sphère. Vous pouvez supprimer un charme ou une peur, ou rendre des cibles temporairement indifférentes.",
+        "classes":  [
+                        "Clerc"
+                    ]
+    },
+    {
+        "index":  "charm-person",
+        "name":  "Charme-personne",
+        "spell_level":  1,
+        "school":  "enchantment",
+        "casting_time":  "1 action",
+        "range":  "9 mètres",
+        "duration":  "1 heure",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Un humanoïde qui rate sa sauvegarde de Sagesse est charmé par vous. Il a l’avantage à sa sauvegarde si vous ou vos alliés le combattez.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "chill-touch",
+        "name":  "Contact glacial",
+        "spell_level":  0,
+        "school":  "necromancy",
+        "casting_time":  "1 action",
+        "range":  "36 mètres",
+        "duration":  "1 round",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Une attaque de sort à distance inflige des dégâts nécrotiques et empêche la cible de regagner des points de vie jusqu’à votre prochain tour. Les morts-vivants sont désavantagés pour attaquer.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "clairvoyance",
+        "name":  "Clairvoyance",
+        "spell_level":  3,
+        "school":  "divination",
+        "casting_time":  "10 minutes",
+        "range":  "1,5 km",
+        "duration":  "Jusqu\u0027à 10 minutes",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Un focaliseur d\u0027une valeur d\u0027au moins 100 po, soit une corne pour entendre enchâssée de gemme, soit un œil de verre pour voir.",
+        "description":  "Vous créez un capteur invisible dans un lieu connu ou évident. Il vous permet de voir ou d’entendre depuis cet endroit.",
+        "classes":  [
+                        "Clerc",
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "color-spray",
+        "name":  "Couleurs dansantes",
+        "spell_level":  1,
+        "school":  "illusion",
+        "casting_time":  "1 action",
+        "range":  "Personnelle",
+        "duration":  "1 round",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Une pincée de poudre ou de sable de couleur rouge, jaune et bleu.",
+        "description":  "Des lumières colorées aveuglent temporairement les créatures proches selon leurs points de vie. Les créatures aux points de vie les plus faibles sont affectées en premier.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "command",
+        "name":  "Injonction",
+        "spell_level":  1,
+        "school":  "enchantment",
+        "casting_time":  "1 action",
+        "range":  "18 mètres",
+        "duration":  "1 round",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  false,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Une créature qui rate sa sauvegarde de Sagesse obéit à votre ordre d’un mot à son prochain tour. L’ordre ne peut pas lui nuire directement.",
+        "classes":  [
+                        "Clerc"
+                    ]
+    },
+    {
+        "index":  "comprehend-languages",
+        "name":  "Compréhension des langues",
+        "spell_level":  1,
+        "school":  "divination",
+        "casting_time":  "1 action",
+        "range":  "Personnelle",
+        "duration":  "1 heure",
+        "concentration":  false,
+        "ritual":  true,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Une pincée de suie et de sel.",
+        "description":  "Vous comprenez le sens littéral des langues parlées et des textes que vous touchez. Le sort ne déchiffre ni codes secrets ni glyphes magiques.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "continual-flame",
+        "name":  "Flamme éternelle",
+        "spell_level":  2,
+        "school":  "evocation",
+        "casting_time":  "1 action",
+        "range":  "Contact",
+        "duration":  "Jusqu\u0027à dissipation",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "De la poussière de rubis valant 50 po, que le sort consomme.",
+        "description":  "Une flamme durable éclaire comme une torche sans dégager de chaleur. Elle peut être recouverte ou dissipée, mais ne s’éteint pas normalement.",
+        "classes":  [
+                        "Clerc",
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "counterspell",
+        "name":  "Contresort",
+        "spell_level":  3,
+        "school":  "abjuration",
+        "casting_time":  "1 reaction",
+        "range":  "18 mètres",
+        "duration":  "Instantanée",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  false,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Vous interrompez l’incantation d’un sort de niveau 3 ou inférieur. Pour un sort supérieur, effectuez un test de caractéristique ou utilisez un emplacement assez puissant.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "create-food-and-water",
+        "name":  "Création de nourriture et d\u0027eau",
+        "spell_level":  3,
+        "school":  "conjuration",
+        "casting_time":  "1 action",
+        "range":  "9 mètres",
+        "duration":  "Instantanée",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Vous créez assez de nourriture et d’eau pour nourrir quinze humanoïdes pendant 24 heures. La nourriture se gâte après une journée.",
+        "classes":  [
+                        "Clerc"
+                    ]
+    },
+    {
+        "index":  "create-or-destroy-water",
+        "name":  "Création ou destruction d\u0027eau",
+        "spell_level":  1,
+        "school":  "transmutation",
+        "casting_time":  "1 action",
+        "range":  "9 mètres",
+        "duration":  "Instantanée",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Une goutte d\u0027eau pour la création d\u0027eau ou quelques grains de sable pour la destruction d\u0027eau.",
+        "description":  "Vous créez ou détruisez jusqu’à 40 litres d’eau dans un contenant ouvert. Vous pouvez aussi produire de la pluie ou dissiper du brouillard.",
+        "classes":  [
+                        "Clerc"
+                    ]
+    },
+    {
+        "index":  "cure-wounds",
+        "name":  "Soins",
+        "spell_level":  1,
+        "school":  "evocation",
+        "casting_time":  "1 action",
+        "range":  "Contact",
+        "duration":  "Instantanée",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Une créature touchée récupère 1d8 points de vie plus votre modificateur d’incantation. Ce sort n’affecte ni les morts-vivants ni les créatures artificielles.",
+        "classes":  [
+                        "Clerc"
+                    ]
+    },
+    {
+        "index":  "dancing-lights",
+        "name":  "Lumières dansantes",
+        "spell_level":  0,
+        "school":  "evocation",
+        "casting_time":  "1 action",
+        "range":  "36 mètres",
+        "duration":  "Jusqu\u0027à 1 minute",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "un peu de phosphore ou d\u0027écorce d\u0027orme blanc, ou bien un ver luisant.",
+        "description":  "Vous créez jusqu’à quatre petites lumières mobiles dans la portée du sort. Elles éclairent faiblement et peuvent former une silhouette lumineuse.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "darkness",
+        "name":  "Ténèbres",
+        "spell_level":  2,
+        "school":  "evocation",
+        "casting_time":  "1 action",
+        "range":  "18 mètres",
+        "duration":  "Jusqu\u0027à 10 minutes",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  false,
+        "material":  true,
+        "material_description":  "Des poils de chauve-souris et une goutte de goudron ou un morceau de charbon.",
+        "description":  "Une sphère de ténèbres magiques bloque la vision ordinaire et la vision dans le noir. Une lumière magique suffisamment puissante peut les dissiper.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "darkvision",
+        "name":  "Vision dans le noir",
+        "spell_level":  2,
+        "school":  "transmutation",
+        "casting_time":  "1 action",
+        "range":  "Contact",
+        "duration":  "8 heures",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Soit une pincée de carotte séchée, soit une agate.",
+        "description":  "Une créature consentante touchée obtient la vision dans le noir sur 18 mètres. L’effet dure huit heures.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "daylight",
+        "name":  "Lumière du jour",
+        "spell_level":  3,
+        "school":  "evocation",
+        "casting_time":  "1 action",
+        "range":  "18 mètres",
+        "duration":  "1 heure",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Une sphère de lumière vive éclaire sur 18 mètres de rayon, puis faiblement sur 18 mètres supplémentaires. Elle dissipe certaines ténèbres magiques.",
+        "classes":  [
+                        "Clerc"
+                    ]
+    },
+    {
+        "index":  "detect-evil-and-good",
+        "name":  "Détection du mal et du bien",
+        "spell_level":  1,
+        "school":  "divination",
+        "casting_time":  "1 action",
+        "range":  "Personnelle",
+        "duration":  "Jusqu\u0027à 10 minutes",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Vous détectez certaines créatures surnaturelles ainsi que les lieux consacrés ou profanés à proximité. Vous percevez leur emplacement pendant la durée du sort.",
+        "classes":  [
+                        "Clerc"
+                    ]
+    },
+    {
+        "index":  "detect-magic",
+        "name":  "Détection de la magie",
+        "spell_level":  1,
+        "school":  "divination",
+        "casting_time":  "1 action",
+        "range":  "Personnelle",
+        "duration":  "Jusqu\u0027à 10 minutes",
+        "concentration":  true,
+        "ritual":  true,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Vous percevez la magie à proximité et pouvez voir l’aura magique des objets ou créatures visibles. Vous découvrez aussi leur école de magie éventuelle.",
+        "classes":  [
+                        "Clerc",
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "detect-poison-and-disease",
+        "name":  "Détection du poison et des maladies",
+        "spell_level":  1,
+        "school":  "divination",
+        "casting_time":  "1 action",
+        "range":  "Personnelle",
+        "duration":  "Jusqu\u0027à 10 minutes",
+        "concentration":  true,
+        "ritual":  true,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Une feuille d\u0027if.",
+        "description":  "Vous détectez et localisez les poisons, créatures venimeuses et maladies à proximité. Vous pouvez identifier leur nature.",
+        "classes":  [
+                        "Clerc"
+                    ]
+    },
+    {
+        "index":  "detect-thoughts",
+        "name":  "Détection des pensées",
+        "spell_level":  2,
+        "school":  "divination",
+        "casting_time":  "1 action",
+        "range":  "Personnelle",
+        "duration":  "Jusqu\u0027à 1 minute",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "A copper coin.",
+        "description":  "Vous percevez les pensées superficielles d’une créature proche et pouvez tenter d’explorer son esprit. Une cible résistante peut découvrir votre présence.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "disguise-self",
+        "name":  "Déguisement",
+        "spell_level":  1,
+        "school":  "illusion",
+        "casting_time":  "1 action",
+        "range":  "Personnelle",
+        "duration":  "1 heure",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Vous modifiez votre apparence et celle de vos vêtements pendant une heure. Un examen physique révèle que les changements sont illusoires.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "dispel-magic",
+        "name":  "Dissipation de la magie",
+        "spell_level":  3,
+        "school":  "abjuration",
+        "casting_time":  "1 action",
+        "range":  "36 mètres",
+        "duration":  "Instantanée",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Vous mettez fin aux sorts actifs de niveau 3 ou inférieur sur une cible. Les sorts plus puissants exigent un test ou un emplacement supérieur.",
+        "classes":  [
+                        "Clerc",
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "enhance-ability",
+        "name":  "Amélioration de caractéristique",
+        "spell_level":  2,
+        "school":  "transmutation",
+        "casting_time":  "1 action",
+        "range":  "Contact",
+        "duration":  "Jusqu\u0027à 1 heure",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Le poil ou la plume d\u0027une bête.",
+        "description":  "Une créature touchée obtient un avantage lié à une caractéristique choisie. Selon l’option, elle gagne aussi des points de vie temporaires ou une capacité physique.",
+        "classes":  [
+                        "Clerc"
+                    ]
+    },
+    {
+        "index":  "enlarge-reduce",
+        "name":  "Agrandissement/Rapetissement",
+        "spell_level":  2,
+        "school":  "transmutation",
+        "casting_time":  "1 action",
+        "range":  "9 mètres",
+        "duration":  "Jusqu\u0027à 1 minute",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Une pincée de poudre de fer.",
+        "description":  "Une créature ou un objet double ou réduit de moitié sa taille. Sa masse et certains effets de combat changent en conséquence.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "expeditious-retreat",
+        "name":  "Repli expéditif",
+        "spell_level":  1,
+        "school":  "transmutation",
+        "casting_time":  "1 action bonus",
+        "range":  "Personnelle",
+        "duration":  "Jusqu\u0027à 10 minutes",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Vous pouvez effectuer l’action Foncer en action bonus pendant la durée du sort. Vous pouvez l’utiliser dès l’incantation.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "false-life",
+        "name":  "Simulacre de vie",
+        "spell_level":  1,
+        "school":  "necromancy",
+        "casting_time":  "1 action",
+        "range":  "Personnelle",
+        "duration":  "1 heure",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "une petite quantité d\u0027alcool ou de spiritueux",
+        "description":  "Vous gagnez 1d4 + 4 points de vie temporaires pendant une heure. Un emplacement supérieur augmente ce montant.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "fear",
+        "name":  "Terreur",
+        "spell_level":  3,
+        "school":  "illusion",
+        "casting_time":  "1 action",
+        "range":  "Personnelle",
+        "duration":  "Jusqu\u0027à 1 minute",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Une plume blanche ou un cœur d\u0027une poule.",
+        "description":  "Les créatures dans un cône qui ratent leur sauvegarde de Sagesse lâchent leurs objets et fuient. Elles peuvent retenter leur sauvegarde hors de votre vue.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "feather-fall",
+        "name":  "Chute de plumes",
+        "spell_level":  1,
+        "school":  "transmutation",
+        "casting_time":  "1 reaction",
+        "range":  "18 mètres",
+        "duration":  "1 minute",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  false,
+        "material":  true,
+        "material_description":  "Une petite plume ou un peu de duvet.",
+        "description":  "Jusqu’à cinq créatures en chute ralentissent leur descente et ne subissent aucun dégât de chute avant l’atterrissage. Le sort dure une minute.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "find-familiar",
+        "name":  "Appel de familier",
+        "spell_level":  1,
+        "school":  "conjuration",
+        "casting_time":  "1 heure",
+        "range":  "3 mètres",
+        "duration":  "Instantanée",
+        "concentration":  false,
+        "ritual":  true,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Du charbon de bois, de l\u0027encens, et des herbes pour une valeur de totale minimum de 10 po, le tout étant consumé par le feu dans un chaudron en laiton.",
+        "description":  "Vous invoquez un esprit animal qui vous sert de familier. Il peut explorer, transmettre ses perceptions et vous aider sans attaquer.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "find-traps",
+        "name":  "Détection des pièges",
+        "spell_level":  2,
+        "school":  "divination",
+        "casting_time":  "1 action",
+        "range":  "36 mètres",
+        "duration":  "Instantanée",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Vous sentez la présence des pièges visibles à portée, sans connaître leur emplacement exact. Vous apprenez la nature générale du danger.",
+        "classes":  [
+                        "Clerc"
+                    ]
+    },
+    {
+        "index":  "fire-bolt",
+        "name":  "Trait de feu",
+        "spell_level":  0,
+        "school":  "evocation",
+        "casting_time":  "1 action",
+        "range":  "36 mètres",
+        "duration":  "Instantanée",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Une attaque de sort à distance inflige 1d10 dégâts de feu. Les dégâts augmentent avec votre niveau et les objets inflammables touchés peuvent s’enflammer.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "fireball",
+        "name":  "Boule de feu",
+        "spell_level":  3,
+        "school":  "evocation",
+        "casting_time":  "1 action",
+        "range":  "45 mètres",
+        "duration":  "Instantanée",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Une toute petite boule de guano de chauve-souris et du souffre",
+        "description":  "Une explosion de 6 mètres de rayon inflige 8d6 dégâts de feu, réduits de moitié par une sauvegarde de Dextérité. Elle enflamme les objets combustibles.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "flaming-sphere",
+        "name":  "Sphère de feu",
+        "spell_level":  2,
+        "school":  "conjuration",
+        "casting_time":  "1 action",
+        "range":  "18 mètres",
+        "duration":  "Jusqu\u0027à 1 minute",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Un peu de suif, une pincée de soufre et de la poussière de poudre de fer.",
+        "description":  "Une sphère de feu mobile brûle les créatures proches et peut être dirigée par une action bonus. Une sauvegarde de Dextérité réduit ses dégâts.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "floating-disk",
+        "name":  "Disque flottant",
+        "spell_level":  1,
+        "school":  "conjuration",
+        "casting_time":  "1 action",
+        "range":  "9 mètres",
+        "duration":  "1 heure",
+        "concentration":  false,
+        "ritual":  true,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Une goutte de mercure.",
+        "description":  "Un disque flottant vous suit et transporte jusqu’à 250 kg. Il reste près du sol et disparaît après une heure.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "fly",
+        "name":  "Vol",
+        "spell_level":  3,
+        "school":  "transmutation",
+        "casting_time":  "1 action",
+        "range":  "Contact",
+        "duration":  "Jusqu\u0027à 10 minutes",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Une plume d\u0027aile d\u0027oiseau.",
+        "description":  "Une créature consentante touchée obtient une vitesse de vol de 18 mètres. Elle tombe si elle vole encore quand le sort prend fin.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "fog-cloud",
+        "name":  "Nappe de brouillard",
+        "spell_level":  1,
+        "school":  "conjuration",
+        "casting_time":  "1 action",
+        "range":  "36 mètres",
+        "duration":  "Jusqu\u0027à 1 heure",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Une sphère de brouillard obscurcit fortement une zone. Le vent peut la disperser.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "gaseous-form",
+        "name":  "Forme gazeuse",
+        "spell_level":  3,
+        "school":  "transmutation",
+        "casting_time":  "1 action",
+        "range":  "Contact",
+        "duration":  "Jusqu\u0027à 1 heure",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Un morceau de gaze et une volute de fumée.",
+        "description":  "Une créature consentante devient gazeuse, vole lentement et traverse de petites ouvertures. Elle conserve certaines résistances, mais ne peut généralement pas attaquer.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "gentle-repose",
+        "name":  "Doux repos",
+        "spell_level":  2,
+        "school":  "necromancy",
+        "casting_time":  "1 action",
+        "range":  "Contact",
+        "duration":  "10 jours",
+        "concentration":  false,
+        "ritual":  true,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "(une pincée de sel et une pièce de cuivre disposée sur chacun des yeux du cadavre, qui doivent y rester pour toute la durée",
+        "description":  "Un cadavre touché ne se décompose pas et ne peut pas devenir mort-vivant pendant dix jours. Ce délai ne compte pas pour certains sorts de résurrection.",
+        "classes":  [
+                        "Clerc",
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "glyph-of-warding",
+        "name":  "Glyphe de garde",
+        "spell_level":  3,
+        "school":  "abjuration",
+        "casting_time":  "1 heure",
+        "range":  "Contact",
+        "duration":  "Jusqu\u0027à dissipation",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "De l’encens et de la poudre de diamant d’une valeur minimale de 200 po, que le sort détruit.",
+        "description":  "Vous inscrivez un glyphe qui déclenche un effet magique ou une explosion lorsqu’une condition est remplie. Déplacer l’objet trop loin désactive le glyphe.",
+        "classes":  [
+                        "Clerc",
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "grease",
+        "name":  "Grease",
+        "spell_level":  1,
+        "school":  "conjuration",
+        "casting_time":  "1 action",
+        "range":  "18 mètres",
+        "duration":  "1 minute",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Un peu de couenne de porc ou de beurre",
+        "description":  "Une zone de graisse rend le sol difficile et peut faire tomber les créatures qui ratent leur sauvegarde de Dextérité. L’effet dure une minute.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "guidance",
+        "name":  "Assistance",
+        "spell_level":  0,
+        "school":  "divination",
+        "casting_time":  "1 action",
+        "range":  "Contact",
+        "duration":  "Jusqu\u0027à 1 minute",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Une créature consentante touchée ajoute 1d4 à un test de caractéristique de son choix avant la fin du sort. Le bonus s’applique une seule fois.",
+        "classes":  [
+                        "Clerc"
+                    ]
+    },
+    {
+        "index":  "guiding-bolt",
+        "name":  "Rayon traçant",
+        "spell_level":  1,
+        "school":  "evocation",
+        "casting_time":  "1 action",
+        "range":  "36 mètres",
+        "duration":  "1 round",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Une attaque de sort à distance inflige 4d6 dégâts radiants. La prochaine attaque contre la cible avant votre prochain tour bénéficie d’un avantage.",
+        "classes":  [
+                        "Clerc"
+                    ]
+    },
+    {
+        "index":  "gust-of-wind",
+        "name":  "Bourrasque",
+        "spell_level":  2,
+        "school":  "evocation",
+        "casting_time":  "1 action",
+        "range":  "Personnelle",
+        "duration":  "Jusqu\u0027à 1 minute",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Une graine de légumineuse.",
+        "description":  "Une ligne de vent violent repousse les créatures et disperse les gaz ou vapeurs. Les déplacements contre le vent coûtent davantage.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "haste",
+        "name":  "Hâte",
+        "spell_level":  3,
+        "school":  "transmutation",
+        "casting_time":  "1 action",
+        "range":  "9 mètres",
+        "duration":  "Jusqu\u0027à 1 minute",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Un copeau de racine de réglisse",
+        "description":  "Une créature consentante gagne en vitesse, en défense et en rapidité d’action. À la fin du sort, elle perd son prochain tour à récupérer.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "healing-word",
+        "name":  "Mot de guérison",
+        "spell_level":  1,
+        "school":  "evocation",
+        "casting_time":  "1 action bonus",
+        "range":  "18 mètres",
+        "duration":  "Instantanée",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  false,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Une créature visible à portée récupère 1d4 points de vie plus votre modificateur d’incantation. Ce sort s’incante avec une action bonus.",
+        "classes":  [
+                        "Clerc"
+                    ]
+    },
+    {
+        "index":  "hideous-laughter",
+        "name":  "Fou rire",
+        "spell_level":  1,
+        "school":  "enchantment",
+        "casting_time":  "1 action",
+        "range":  "9 mètres",
+        "duration":  "Jusqu\u0027à 1 minute",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "De minuscules tartes à la crème et une plume agitée en l’air.",
+        "description":  "Une créature qui rate sa sauvegarde de Sagesse tombe de rire et devient incapable d’agir. Elle peut retenter sa sauvegarde après des dégâts ou chaque tour.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "hold-person",
+        "name":  "Immobilisation de personne",
+        "spell_level":  2,
+        "school":  "enchantment",
+        "casting_time":  "1 action",
+        "range":  "18 mètres",
+        "duration":  "Jusqu\u0027à 1 minute",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Un brin de fer.",
+        "description":  "Un humanoïde qui rate sa sauvegarde de Sagesse est paralysé. Il retente sa sauvegarde à la fin de chacun de ses tours.",
+        "classes":  [
+                        "Clerc",
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "hypnotic-pattern",
+        "name":  "Motif hypnotique",
+        "spell_level":  3,
+        "school":  "illusion",
+        "casting_time":  "1 action",
+        "range":  "36 mètres",
+        "duration":  "Jusqu\u0027à 1 minute",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  false,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Un bâton d’encens incandescent ou une fiole de cristal remplie de matière phosphorescente.",
+        "description":  "Les créatures qui voient un motif lumineux et ratent leur sauvegarde de Sagesse sont charmées et incapables d’agir. L’effet cesse si elles subissent des dégâts.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "identify",
+        "name":  "Identification",
+        "spell_level":  1,
+        "school":  "divination",
+        "casting_time":  "1 minute",
+        "range":  "Contact",
+        "duration":  "Instantanée",
+        "concentration":  false,
+        "ritual":  true,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Une perle d’une valeur minimale de 100 po et une plume de hibou",
+        "description":  "Vous découvrez les propriétés magiques d’un objet touché ou les sorts affectant une créature. Vous apprenez comment utiliser l’objet et s’il exige une harmonisation.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "illusory-script",
+        "name":  "Texte illusoire",
+        "spell_level":  1,
+        "school":  "illusion",
+        "casting_time":  "1 minute",
+        "range":  "Contact",
+        "duration":  "10 jours",
+        "concentration":  false,
+        "ritual":  true,
+        "verbal":  false,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "De l’encre au plomb d’une valeur minimale de 10 po, que le sort détrui.",
+        "description":  "Vous écrivez un message qui paraît différent aux lecteurs non désignés. Les destinataires choisis lisent le texte réel et reconnaissent l’illusion.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "inflict-wounds",
+        "name":  "Blessure",
+        "spell_level":  1,
+        "school":  "necromancy",
+        "casting_time":  "1 action",
+        "range":  "Contact",
+        "duration":  "Instantanée",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Une attaque de sort au corps à corps inflige 3d10 dégâts nécrotiques. Les dégâts augmentent avec le niveau de l’emplacement.",
+        "classes":  [
+                        "Clerc"
+                    ]
+    },
+    {
+        "index":  "invisibility",
+        "name":  "Invisibilité",
+        "spell_level":  2,
+        "school":  "illusion",
+        "casting_time":  "1 action",
+        "range":  "Contact",
+        "duration":  "Jusqu\u0027à 1 heure",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Un cil incrusté dans de la sève.",
+        "description":  "Une créature touchée et son équipement deviennent invisibles. L’effet cesse si elle attaque ou lance un sort.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "jump",
+        "name":  "Saut",
+        "spell_level":  1,
+        "school":  "transmutation",
+        "casting_time":  "1 action",
+        "range":  "Contact",
+        "duration":  "1 minute",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Une patte arrière de sauterelle.",
+        "description":  "La distance de saut d’une créature touchée est triplée pendant une minute. Sa vitesse de déplacement reste inchangée.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "knock",
+        "name":  "Déblocage",
+        "spell_level":  2,
+        "school":  "transmutation",
+        "casting_time":  "1 action",
+        "range":  "18 mètres",
+        "duration":  "Instantanée",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  false,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Vous ouvrez ou déverrouillez une porte, un coffre ou un autre accès bloqué. Le sort produit un bruit audible à grande distance.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "lesser-restoration",
+        "name":  "Restauration partielle",
+        "spell_level":  2,
+        "school":  "abjuration",
+        "casting_time":  "1 action",
+        "range":  "Contact",
+        "duration":  "Instantanée",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Vous guérissez une maladie ou supprimez chez une créature un état aveuglé, assourdi, paralysé ou empoisonné. Le contact est nécessaire.",
+        "classes":  [
+                        "Clerc"
+                    ]
+    },
+    {
+        "index":  "levitate",
+        "name":  "Lévitation",
+        "spell_level":  2,
+        "school":  "transmutation",
+        "casting_time":  "1 action",
+        "range":  "18 mètres",
+        "duration":  "Jusqu\u0027à 10 minutes",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Une petite boucle de cuir ou un fil doré en forme de coupe avec une longue anse.",
+        "description":  "Une créature ou un objet s’élève verticalement et reste suspendu. Vous pouvez modifier son altitude, mais le déplacement horizontal exige une autre force.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "light",
+        "name":  "Lumière",
+        "spell_level":  0,
+        "school":  "evocation",
+        "casting_time":  "1 action",
+        "range":  "Contact",
+        "duration":  "1 heure",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  false,
+        "material":  true,
+        "material_description":  "Une luciole ou de la mousse phosphorescente.",
+        "description":  "Un objet touché émet une lumière vive sur 6 mètres et faible sur 6 mètres supplémentaires. Couvrir complètement l’objet bloque cette lumière.",
+        "classes":  [
+                        "Clerc",
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "lightning-bolt",
+        "name":  "Éclair",
+        "spell_level":  3,
+        "school":  "evocation",
+        "casting_time":  "1 action",
+        "range":  "Personnelle",
+        "duration":  "Instantanée",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Un peu de fourrure et une tige d’ambre, de cristal ou de verre.",
+        "description":  "Un éclair en ligne inflige 8d6 dégâts de foudre, réduits de moitié par une sauvegarde de Dextérité. Il enflamme les objets inflammables.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "locate-object",
+        "name":  "Localisation d\u0027objet",
+        "spell_level":  2,
+        "school":  "divination",
+        "casting_time":  "1 action",
+        "range":  "Personnelle",
+        "duration":  "Jusqu\u0027à 10 minutes",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "une brindille fourchue",
+        "description":  "Vous percevez la direction d’un objet familier situé à moins de 300 mètres. Une épaisseur de plomb bloque la détection.",
+        "classes":  [
+                        "Clerc",
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "longstrider",
+        "name":  "Grande foulée",
+        "spell_level":  1,
+        "school":  "transmutation",
+        "casting_time":  "1 action",
+        "range":  "Contact",
+        "duration":  "1 heure",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Une pincée de terre.",
+        "description":  "La vitesse d’une créature touchée augmente de 3 mètres pendant une heure. Un emplacement supérieur permet de toucher davantage de créatures.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "mage-armor",
+        "name":  "Armure du mage",
+        "spell_level":  1,
+        "school":  "abjuration",
+        "casting_time":  "1 action",
+        "range":  "Contact",
+        "duration":  "8 heures",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Un morceau de cuir traité.",
+        "description":  "Une créature consentante sans armure bénéficie d’une CA de 13 plus son modificateur de Dextérité. Le sort dure huit heures.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "mage-hand",
+        "name":  "Main du mage",
+        "spell_level":  0,
+        "school":  "conjuration",
+        "casting_time":  "1 action",
+        "range":  "9 mètres",
+        "duration":  "1 minute",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Une main spectrale manipule des objets à distance, jusqu’à 4,5 kg. Elle ne peut ni attaquer ni activer d’objet magique.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "magic-circle",
+        "name":  "Cercle magique",
+        "spell_level":  3,
+        "school":  "abjuration",
+        "casting_time":  "1 minute",
+        "range":  "3 mètres",
+        "duration":  "1 heure",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "De l’eau bénite ou de la poudre de fer et d’argent d’une valeur minimale de 100 po, que le sort détruit",
+        "description":  "Un cylindre magique empêche certaines créatures surnaturelles de pénétrer ou quitter sa zone. Il les protège aussi contre plusieurs formes d’influence.",
+        "classes":  [
+                        "Clerc",
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "magic-missile",
+        "name":  "Projectile magique",
+        "spell_level":  1,
+        "school":  "evocation",
+        "casting_time":  "1 action",
+        "range":  "36 mètres",
+        "duration":  "Instantanée",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Trois projectiles magiques touchent automatiquement les cibles choisies et infligent chacun 1d4 + 1 dégâts de force. Un emplacement supérieur crée davantage de projectiles.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "magic-mouth",
+        "name":  "Bouche magique",
+        "spell_level":  2,
+        "school":  "illusion",
+        "casting_time":  "1 minute",
+        "range":  "9 mètres",
+        "duration":  "Jusqu\u0027à dissipation",
+        "concentration":  false,
+        "ritual":  true,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Un peu de rayon de miel et de poudre de jade d’une valeur minimale de 10 po, que le sort détruit",
+        "description":  "Un objet prononce un message enregistré lorsqu’une condition définie se produit. Vous choisissez le déclencheur et la voix du message.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "magic-weapon",
+        "name":  "Arme magique",
+        "spell_level":  2,
+        "school":  "transmutation",
+        "casting_time":  "1 action bonus",
+        "range":  "Contact",
+        "duration":  "Jusqu\u0027à 1 heure",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Une arme non magique touchée devient magique et reçoit un bonus de +1 aux attaques et aux dégâts. Le bonus augmente avec un emplacement supérieur.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "major-image",
+        "name":  "Image majeure",
+        "spell_level":  3,
+        "school":  "illusion",
+        "casting_time":  "1 action",
+        "range":  "36 mètres",
+        "duration":  "Jusqu\u0027à 10 minutes",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Un peu de laine brute.",
+        "description":  "Vous créez une illusion visible, sonore, odorante et thermique qui se déplace selon vos indications. Un examen attentif peut révéler sa nature illusoire.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "mass-healing-word",
+        "name":  "Mot de guérison de groupe",
+        "spell_level":  3,
+        "school":  "evocation",
+        "casting_time":  "1 action bonus",
+        "range":  "18 mètres",
+        "duration":  "Instantanée",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  false,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Jusqu’à six créatures visibles récupèrent chacune 1d4 points de vie plus votre modificateur d’incantation. Ce sort s’incante avec une action bonus.",
+        "classes":  [
+                        "Clerc"
+                    ]
+    },
+    {
+        "index":  "meld-into-stone",
+        "name":  "Fusion dans la pierre",
+        "spell_level":  3,
+        "school":  "transmutation",
+        "casting_time":  "1 action",
+        "range":  "Contact",
+        "duration":  "8 heures",
+        "concentration":  false,
+        "ritual":  true,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Vous entrez dans une masse de pierre et y restez caché. Une perturbation de la pierre peut vous blesser ou vous expulser.",
+        "classes":  [
+                        "Clerc"
+                    ]
+    },
+    {
+        "index":  "mending",
+        "name":  "Réparation",
+        "spell_level":  0,
+        "school":  "transmutation",
+        "casting_time":  "1 minute",
+        "range":  "Contact",
+        "duration":  "Instantanée",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Deux magnétites.",
+        "description":  "Vous réparez une petite fissure, cassure ou déchirure dans un objet touché. Le sort ne restaure pas ses propriétés magiques perdues.",
+        "classes":  [
+                        "Clerc",
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "message",
+        "name":  "Message",
+        "spell_level":  0,
+        "school":  "transmutation",
+        "casting_time":  "1 action",
+        "range":  "36 mètres",
+        "duration":  "1 round",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Un peu de fil de cuivre.",
+        "description":  "Vous murmurez un message à une créature que vous désignez à portée. Elle seule l’entend et peut vous répondre discrètement.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "minor-illusion",
+        "name":  "Illusion mineure",
+        "spell_level":  0,
+        "school":  "illusion",
+        "casting_time":  "1 action",
+        "range":  "9 mètres",
+        "duration":  "1 minute",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  false,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Un peu de laine brute.",
+        "description":  "Vous créez un son ou l’image immobile d’un objet dans une petite zone. L’illusion peut être démasquée par un examen ou un contact.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "mirror-image",
+        "name":  "Image miroir",
+        "spell_level":  2,
+        "school":  "illusion",
+        "casting_time":  "1 action",
+        "range":  "Personnelle",
+        "duration":  "1 minute",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Trois doubles illusoires détournent les attaques dirigées contre vous. Chaque double disparaît lorsqu’une attaque le touche.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "misty-step",
+        "name":  "Pas brumeux",
+        "spell_level":  2,
+        "school":  "conjuration",
+        "casting_time":  "1 action bonus",
+        "range":  "Personnelle",
+        "duration":  "Instantanée",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  false,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Vous vous téléportez de 9 mètres au maximum vers un espace inoccupé que vous voyez. Le sort s’incante avec une action bonus.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "nondetection",
+        "name":  "Antidétection",
+        "spell_level":  3,
+        "school":  "abjuration",
+        "casting_time":  "1 action",
+        "range":  "Contact",
+        "duration":  "8 heures",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Une pincée de poussière de diamant d’une valeur de 25 po, saupoudrée sur la cible, que le sort détruit.",
+        "description":  "Une créature ou un objet touché devient indétectable par magie de divination pendant huit heures. Il ne peut pas être perçu au moyen d’un capteur magique.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "phantom-steed",
+        "name":  "Monture fantôme",
+        "spell_level":  3,
+        "school":  "illusion",
+        "casting_time":  "1 minute",
+        "range":  "9 mètres",
+        "duration":  "1 heure",
+        "concentration":  false,
+        "ritual":  true,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Vous invoquez une monture rapide et presque réelle pour une heure. Elle disparaît si elle subit des dégâts.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "poison-spray",
+        "name":  "Bouffée de poison",
+        "spell_level":  0,
+        "school":  "conjuration",
+        "casting_time":  "1 action",
+        "range":  "3 mètres",
+        "duration":  "Instantanée",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Une créature proche rate une sauvegarde de Constitution et subit des dégâts de poison. Les dégâts augmentent avec votre niveau.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "prayer-of-healing",
+        "name":  "Prière de guérison",
+        "spell_level":  2,
+        "school":  "evocation",
+        "casting_time":  "10 minutes",
+        "range":  "9 mètres",
+        "duration":  "Instantanée",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  false,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Jusqu’à six créatures visibles récupèrent chacune 2d8 points de vie plus votre modificateur d’incantation. L’incantation dure dix minutes.",
+        "classes":  [
+                        "Clerc"
+                    ]
+    },
+    {
+        "index":  "prestidigitation",
+        "name":  "Prestidigitation",
+        "spell_level":  0,
+        "school":  "transmutation",
+        "casting_time":  "1 action",
+        "range":  "3 mètres",
+        "duration":  "1 heure",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Vous produisez un petit effet magique, comme nettoyer, allumer, parfumer ou créer une illusion mineure. Plusieurs effets peuvent coexister temporairement.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "protection-from-energy",
+        "name":  "Protection contre l\u0027énergie",
+        "spell_level":  3,
+        "school":  "abjuration",
+        "casting_time":  "1 action",
+        "range":  "Contact",
+        "duration":  "Jusqu\u0027à 1 heure",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Une créature consentante touchée obtient une résistance aux dégâts d’acide, de froid, de feu, de foudre ou de tonnerre. Choisissez le type à l’incantation.",
+        "classes":  [
+                        "Clerc",
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "protection-from-evil-and-good",
+        "name":  "Protection contre le mal et le bien",
+        "spell_level":  1,
+        "school":  "abjuration",
+        "casting_time":  "1 action",
+        "range":  "Contact",
+        "duration":  "Jusqu\u0027à 10 minutes",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "De l’eau bénite ou de la poudre de fer et d’argent, que le sort détruit.",
+        "description":  "Une créature touchée est protégée de certains êtres surnaturels. Ces créatures sont désavantagées pour l’attaquer et ne peuvent pas facilement la charmer ou l’effrayer.",
+        "classes":  [
+                        "Clerc",
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "protection-from-poison",
+        "name":  "Protection contre le poison",
+        "spell_level":  2,
+        "school":  "abjuration",
+        "casting_time":  "1 action",
+        "range":  "Contact",
+        "duration":  "1 heure",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Vous neutralisez un poison chez une créature touchée et lui accordez une résistance au poison. Elle est avantagée aux sauvegardes contre l’empoisonnement.",
+        "classes":  [
+                        "Clerc"
+                    ]
+    },
+    {
+        "index":  "purify-food-and-drink",
+        "name":  "Purification de la nourriture et de l\u0027eau",
+        "spell_level":  1,
+        "school":  "transmutation",
+        "casting_time":  "1 action",
+        "range":  "3 mètres",
+        "duration":  "Instantanée",
+        "concentration":  false,
+        "ritual":  true,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Les aliments et boissons non magiques d’une petite zone deviennent exempts de poison et de maladie. Le sort agit instantanément.",
+        "classes":  [
+                        "Clerc"
+                    ]
+    },
+    {
+        "index":  "ray-of-enfeeblement",
+        "name":  "Rayon affaiblissant",
+        "spell_level":  2,
+        "school":  "necromancy",
+        "casting_time":  "1 action",
+        "range":  "18 mètres",
+        "duration":  "Jusqu\u0027à 1 minute",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Une attaque de sort à distance réduit de moitié les dégâts infligés par les attaques avec Force de la cible. Elle peut retenter sa sauvegarde chaque tour.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "ray-of-frost",
+        "name":  "Rayon de givre",
+        "spell_level":  0,
+        "school":  "evocation",
+        "casting_time":  "1 action",
+        "range":  "18 mètres",
+        "duration":  "Instantanée",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Une attaque de sort à distance inflige 1d8 dégâts de froid et ralentit la cible de 3 mètres. Les dégâts augmentent avec votre niveau.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "remove-curse",
+        "name":  "Délivrance des malédictions",
+        "spell_level":  3,
+        "school":  "abjuration",
+        "casting_time":  "1 action",
+        "range":  "Contact",
+        "duration":  "Instantanée",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Vous mettez fin aux malédictions qui affectent une créature ou un objet touché. Un objet maudit peut rester maudit, mais son porteur peut s’en séparer.",
+        "classes":  [
+                        "Clerc",
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "resistance",
+        "name":  "Résistance",
+        "spell_level":  0,
+        "school":  "abjuration",
+        "casting_time":  "1 action",
+        "range":  "Contact",
+        "duration":  "Jusqu\u0027à 1 minute",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Une cape miniature.",
+        "description":  "Une créature consentante touchée ajoute 1d4 à un jet de sauvegarde de son choix avant la fin du sort. Le bonus s’applique une fois.",
+        "classes":  [
+                        "Clerc"
+                    ]
+    },
+    {
+        "index":  "revivify",
+        "name":  "Revigorer",
+        "spell_level":  3,
+        "school":  "conjuration",
+        "casting_time":  "1 action",
+        "range":  "Contact",
+        "duration":  "Instantanée",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "300 po de diamants, que le sort détruit.",
+        "description":  "Une créature morte depuis moins d’une minute revient à la vie avec 1 point de vie. Le sort ne restaure pas les parties manquantes du corps.",
+        "classes":  [
+                        "Clerc"
+                    ]
+    },
+    {
+        "index":  "rope-trick",
+        "name":  "Corde enchantée",
+        "spell_level":  2,
+        "school":  "transmutation",
+        "casting_time":  "1 action",
+        "range":  "Contact",
+        "duration":  "1 heure",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Extrait de maïs en poudre et une torsade de parchemin.",
+        "description":  "Une corde s’élève et ouvre un refuge extradimensionnel pouvant accueillir huit créatures. L’entrée reste accessible jusqu’à la fin du sort.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "sacred-flame",
+        "name":  "Flamme sacrée",
+        "spell_level":  0,
+        "school":  "evocation",
+        "casting_time":  "1 action",
+        "range":  "18 mètres",
+        "duration":  "Instantanée",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Une créature qui rate sa sauvegarde de Dextérité subit 1d8 dégâts radiants. La couverture ne l’aide pas et les dégâts augmentent avec votre niveau.",
+        "classes":  [
+                        "Clerc"
+                    ]
+    },
+    {
+        "index":  "sanctuary",
+        "name":  "Sanctuaire",
+        "spell_level":  1,
+        "school":  "abjuration",
+        "casting_time":  "1 action bonus",
+        "range":  "9 mètres",
+        "duration":  "1 minute",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Un petit miroir en argent.",
+        "description":  "Une créature protégée oblige ses assaillants à réussir une sauvegarde de Sagesse avant de l’attaquer. L’effet cesse si elle attaque ou nuit à autrui.",
+        "classes":  [
+                        "Clerc"
+                    ]
+    },
+    {
+        "index":  "scorching-ray",
+        "name":  "Rayon ardent",
+        "spell_level":  2,
+        "school":  "evocation",
+        "casting_time":  "1 action",
+        "range":  "36 mètres",
+        "duration":  "Instantanée",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Vous lancez trois rayons de feu, chacun nécessitant une attaque de sort à distance. Chaque rayon qui touche inflige 2d6 dégâts de feu.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "see-invisibility",
+        "name":  "Détection de l\u0027invisibilité",
+        "spell_level":  2,
+        "school":  "divination",
+        "casting_time":  "1 action",
+        "range":  "Personnelle",
+        "duration":  "1 heure",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Une pincée de talc et une petite quantité de poudre d’argent.",
+        "description":  "Vous voyez les créatures et objets invisibles ainsi que dans le plan Éthéré à proximité. L’effet dure une heure.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "sending",
+        "name":  "Communication à distance",
+        "spell_level":  3,
+        "school":  "evocation",
+        "casting_time":  "1 action",
+        "range":  "Illimitée",
+        "duration":  "1 round",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Un bout de fil de cuivre.",
+        "description":  "Vous envoyez un message de 25 mots maximum à une créature connue, même très éloignée. Elle peut répondre immédiatement en 25 mots maximum.",
+        "classes":  [
+                        "Clerc",
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "shatter",
+        "name":  "Fracassement",
+        "spell_level":  2,
+        "school":  "evocation",
+        "casting_time":  "1 action",
+        "range":  "18 mètres",
+        "duration":  "Instantanée",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Un éclat de mica.",
+        "description":  "Une onde sonore inflige 3d8 dégâts de tonnerre aux créatures proches, réduits de moitié par une sauvegarde de Constitution. Les objets non magiques peuvent être endommagés.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "shield",
+        "name":  "Bouclier",
+        "spell_level":  1,
+        "school":  "abjuration",
+        "casting_time":  "1 reaction",
+        "range":  "Personnelle",
+        "duration":  "1 round",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "En réaction, vous gagnez +5 à la CA jusqu’à votre prochain tour. Le sort bloque aussi les projectiles magiques.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "shield-of-faith",
+        "name":  "Bouclier de la foi",
+        "spell_level":  1,
+        "school":  "abjuration",
+        "casting_time":  "1 action bonus",
+        "range":  "18 mètres",
+        "duration":  "Jusqu\u0027à 10 minutes",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Un petit parchemin sur lequel apparaît un extrait d’écritures saintes.",
+        "description":  "Une créature de votre choix gagne +2 à la CA pendant la durée du sort. L’effet exige votre concentration.",
+        "classes":  [
+                        "Clerc"
+                    ]
+    },
+    {
+        "index":  "shocking-grasp",
+        "name":  "Poigne électrique",
+        "spell_level":  0,
+        "school":  "evocation",
+        "casting_time":  "1 action",
+        "range":  "Contact",
+        "duration":  "Instantanée",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Une attaque de sort au corps à corps inflige des dégâts de foudre et empêche la cible de réagir jusqu’à son prochain tour. Les dégâts augmentent avec votre niveau.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "silence",
+        "name":  "Silence",
+        "spell_level":  2,
+        "school":  "illusion",
+        "casting_time":  "1 action",
+        "range":  "36 mètres",
+        "duration":  "Jusqu\u0027à 10 minutes",
+        "concentration":  true,
+        "ritual":  true,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Une sphère devient totalement silencieuse, empêchant les sons et les sorts à composante verbale. Les créatures à l’intérieur sont immunisées aux dégâts de tonnerre.",
+        "classes":  [
+                        "Clerc"
+                    ]
+    },
+    {
+        "index":  "silent-image",
+        "name":  "Image silencieuse",
+        "spell_level":  1,
+        "school":  "illusion",
+        "casting_time":  "1 action",
+        "range":  "18 mètres",
+        "duration":  "Jusqu\u0027à 10 minutes",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Un peu de laine brute.",
+        "description":  "Vous créez l’image mobile d’un objet ou d’une créature, sans son ni odeur. Un contact ou un examen peut révéler l’illusion.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "sleep",
+        "name":  "Sommeil",
+        "spell_level":  1,
+        "school":  "enchantment",
+        "casting_time":  "1 action",
+        "range":  "27 mètres",
+        "duration":  "1 minute",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Une pincée de sable fin, des pétales de rose ou un grillon.",
+        "description":  "Vous endormez des créatures selon un total de 5d8 points de vie, en commençant par les plus faibles. Les dégâts les réveillent.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "sleet-storm",
+        "name":  "Tempête de neige",
+        "spell_level":  3,
+        "school":  "conjuration",
+        "casting_time":  "1 action",
+        "range":  "45 mètres",
+        "duration":  "Jusqu\u0027à 1 minute",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Une pincée de poussière et quelques gouttes d’eau",
+        "description":  "Une tempête glaciale obscurcit une zone, gêne les déplacements et peut interrompre la concentration. Elle peut aussi éteindre les flammes exposées.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "slow",
+        "name":  "Lenteur",
+        "spell_level":  3,
+        "school":  "transmutation",
+        "casting_time":  "1 action",
+        "range":  "36 mètres",
+        "duration":  "Jusqu\u0027à 1 minute",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Une goutte de mélasse.",
+        "description":  "Jusqu’à six créatures ratant leur sauvegarde de Sagesse sont ralenties et subissent des pénalités défensives. Elles peuvent retenter leur sauvegarde chaque tour.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "spare-the-dying",
+        "name":  "Stabilisation",
+        "spell_level":  0,
+        "school":  "necromancy",
+        "casting_time":  "1 action",
+        "range":  "Contact",
+        "duration":  "Instantanée",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Une créature touchée à 0 point de vie est stabilisée. Ce sort n’affecte pas les morts-vivants ni les créatures artificielles.",
+        "classes":  [
+                        "Clerc"
+                    ]
+    },
+    {
+        "index":  "speak-with-dead",
+        "name":  "Communication avec les morts",
+        "spell_level":  3,
+        "school":  "necromancy",
+        "casting_time":  "1 action",
+        "range":  "3 mètres",
+        "duration":  "10 minutes",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "De l’encens qui brûle.",
+        "description":  "Un cadavre doté d’une bouche répond à cinq questions au maximum. Il ne sait que ce qu’il connaissait de son vivant et peut mentir.",
+        "classes":  [
+                        "Clerc"
+                    ]
+    },
+    {
+        "index":  "spider-climb",
+        "name":  "Pattes d\u0027araignée",
+        "spell_level":  2,
+        "school":  "transmutation",
+        "casting_time":  "1 action",
+        "range":  "Contact",
+        "duration":  "Jusqu\u0027à 1 heure",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Une goutte de bitume et une araignée.",
+        "description":  "Une créature consentante touchée peut grimper aux murs et plafonds sans utiliser ses mains. Elle conserve sa vitesse de déplacement.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "spirit-guardians",
+        "name":  "Esprits gardiens",
+        "spell_level":  3,
+        "school":  "conjuration",
+        "casting_time":  "1 action",
+        "range":  "Personnelle",
+        "duration":  "Jusqu\u0027à 10 minutes",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Un symbole sacré.",
+        "description":  "Des esprits vous entourent et blessent les ennemis proches qui entrent ou commencent leur tour dans la zone. Les créatures choisies sont épargnées.",
+        "classes":  [
+                        "Clerc"
+                    ]
+    },
+    {
+        "index":  "spiritual-weapon",
+        "name":  "Arme spirituelle",
+        "spell_level":  2,
+        "school":  "evocation",
+        "casting_time":  "1 action bonus",
+        "range":  "18 mètres",
+        "duration":  "1 minute",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Vous invoquez une arme spectrale et attaquez une créature proche avec une action bonus. Vous pouvez déplacer l’arme et répéter l’attaque.",
+        "classes":  [
+                        "Clerc"
+                    ]
+    },
+    {
+        "index":  "stinking-cloud",
+        "name":  "Nuage nauséabond",
+        "spell_level":  3,
+        "school":  "conjuration",
+        "casting_time":  "1 action",
+        "range":  "27 mètres",
+        "duration":  "Jusqu\u0027à 1 minute",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Un œuf pourri ou plusieurs feuilles de chou puant.",
+        "description":  "Un nuage nauséabond rend malade les créatures qui ratent leur sauvegarde de Constitution. Elles passent leur action à vomir et chanceler.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "suggestion",
+        "name":  "Suggestion",
+        "spell_level":  2,
+        "school":  "enchantment",
+        "casting_time":  "1 action",
+        "range":  "9 mètres",
+        "duration":  "Jusqu\u0027à 8 heures",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  false,
+        "material":  true,
+        "material_description":  "une langue de serpent, et un peu de rayon de miel ou une goutte d’huile sucrée.",
+        "description":  "Vous influencez une créature qui comprend vos paroles pour qu’elle suive une suggestion raisonnable. L’effet cesse si vous ou vos alliés lui infligez des dégâts.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "thaumaturgy",
+        "name":  "Thaumaturgie",
+        "spell_level":  0,
+        "school":  "transmutation",
+        "casting_time":  "1 action",
+        "range":  "9 mètres",
+        "duration":  "1 minute",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  false,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Vous produisez un signe surnaturel mineur, comme amplifier votre voix, faire trembler le sol ou modifier des flammes. Plusieurs effets sont possibles.",
+        "classes":  [
+                        "Clerc"
+                    ]
+    },
+    {
+        "index":  "thunderwave",
+        "name":  "Vague tonnante",
+        "spell_level":  1,
+        "school":  "evocation",
+        "casting_time":  "1 action",
+        "range":  "Personnelle",
+        "duration":  "Instantanée",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Une onde de tonnerre blesse et repousse les créatures proches qui ratent leur sauvegarde de Constitution. Une réussite réduit les dégâts de moitié.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "tiny-hut",
+        "name":  "Petite hutte",
+        "spell_level":  3,
+        "school":  "evocation",
+        "casting_time":  "1 minute",
+        "range":  "Personnelle",
+        "duration":  "8 heures",
+        "concentration":  false,
+        "ritual":  true,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Une petite bille de cristal.",
+        "description":  "Un dôme abrite jusqu’à neuf créatures pendant huit heures. Il bloque les créatures et les effets extérieurs, tout en restant immobile.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "tongues",
+        "name":  "Don des langues",
+        "spell_level":  3,
+        "school":  "divination",
+        "casting_time":  "1 action",
+        "range":  "Contact",
+        "duration":  "1 heure",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  false,
+        "material":  true,
+        "material_description":  "Une ziggourat miniature en argile.",
+        "description":  "Une créature touchée comprend toutes les langues parlées et peut être comprise par toute créature connaissant une langue. L’effet dure une heure.",
+        "classes":  [
+                        "Clerc",
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "true-strike",
+        "name":  "Coup au but",
+        "spell_level":  0,
+        "school":  "divination",
+        "casting_time":  "1 action",
+        "range":  "9 mètres",
+        "duration":  "Jusqu’à 1 round",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  false,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Vous obtenez l’avantage à votre prochaine attaque contre la cible, si votre concentration tient jusque-là. Le sort révèle brièvement ses défenses.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "unseen-servant",
+        "name":  "Serviteur invisible",
+        "spell_level":  1,
+        "school":  "conjuration",
+        "casting_time":  "1 action",
+        "range":  "18 mètres",
+        "duration":  "1 heure",
+        "concentration":  false,
+        "ritual":  true,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Un bout de ficelle et un morceau de bois.",
+        "description":  "Vous créez un serviteur invisible qui accomplit des tâches simples sur commande. Il ne peut pas attaquer et disparaît après une heure.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "vampiric-touch",
+        "name":  "Caresse du vampire",
+        "spell_level":  3,
+        "school":  "necromancy",
+        "casting_time":  "1 action",
+        "range":  "Personnelle",
+        "duration":  "Jusqu\u0027à 1 minute",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Une attaque de sort au corps à corps inflige 3d6 dégâts nécrotiques et vous soigne de la moitié des dégâts infligés. Vous pouvez répéter l’attaque.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "warding-bond",
+        "name":  "Lien de protection",
+        "spell_level":  2,
+        "school":  "abjuration",
+        "casting_time":  "1 action",
+        "range":  "Contact",
+        "duration":  "1 heure",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Deux bagues de platine d’une valeur de 50 po chacune, que la cible et vous devez porter pour toute la durée.",
+        "description":  "Une créature touchée gagne +1 à la CA et une résistance aux dégâts. Vous subissez autant de dégâts qu’elle en reçoit.",
+        "classes":  [
+                        "Clerc"
+                    ]
+    },
+    {
+        "index":  "water-breathing",
+        "name":  "Respiration aquatique",
+        "spell_level":  3,
+        "school":  "transmutation",
+        "casting_time":  "1 action",
+        "range":  "9 mètres",
+        "duration":  "24 heures",
+        "concentration":  false,
+        "ritual":  true,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Un court roseau ou une paille.",
+        "description":  "Jusqu’à dix créatures consentantes peuvent respirer sous l’eau pendant 24 heures. Elles conservent leur capacité à respirer normalement.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "water-walk",
+        "name":  "Marche sur l’onde",
+        "spell_level":  3,
+        "school":  "transmutation",
+        "casting_time":  "1 action",
+        "range":  "9 mètres",
+        "duration":  "1 heure",
+        "concentration":  false,
+        "ritual":  true,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Un morceau de liège.",
+        "description":  "Jusqu’à dix créatures consentantes peuvent marcher sur les liquides et autres surfaces fluides pendant une heure. Elles ne sont pas protégées des dangers de ces surfaces.",
+        "classes":  [
+                        "Clerc"
+                    ]
+    },
+    {
+        "index":  "web",
+        "name":  "Toile d’araignée",
+        "spell_level":  2,
+        "school":  "conjuration",
+        "casting_time":  "1 action",
+        "range":  "18 mètres",
+        "duration":  "Jusqu\u0027à 1 heure",
+        "concentration":  true,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  true,
+        "material_description":  "Quelques filandres de toile d’araignée.",
+        "description":  "Des toiles collantes entravent les créatures qui ratent leur sauvegarde de Dextérité. Elles rendent la zone difficile à traverser et peuvent brûler.",
+        "classes":  [
+                        "Magicien"
+                    ]
+    },
+    {
+        "index":  "zone-of-truth",
+        "name":  "Zone de vérité",
+        "spell_level":  2,
+        "school":  "enchantment",
+        "casting_time":  "1 action",
+        "range":  "18 mètres",
+        "duration":  "10 minutes",
+        "concentration":  false,
+        "ritual":  false,
+        "verbal":  true,
+        "somatic":  true,
+        "material":  false,
+        "material_description":  null,
+        "description":  "Une zone magique révèle les mensonges des créatures qui ratent leur sauvegarde de Charisme. Elles savent qu’elles ne peuvent pas mentir, mais peuvent éviter de répondre.",
+        "classes":  [
+                        "Clerc"
+                    ]
+    }
+]

@@ -1,0 +1,730 @@
+.sheet-page {
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: #1f363d;
+    color: #cfe0c3;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+.sheet-background {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    z-index: 0;
+}
+
+.character-sheet-layout {
+    position: relative;
+    z-index: 1;
+    width: fit-content;
+    max-width: calc(100% - 32px);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 120px 620px 430px;
+    gap: 22px;
+    justify-content: center;
+    align-items: start;
+    padding: 120px 0 50px;
+    box-sizing: border-box;
+}
+
+.sheet-left-column,
+.sheet-center-column,
+.sheet-right-column {
+    position: relative;
+    width: 100%;
+    justify-self: center;
+}
+
+.sheet-left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding-top: 0;
+    align-items: center;
+    width: 120px;
+}
+
+.stat-card {
+    position: relative;
+    width: 117px;
+    min-height: 106px;
+    padding: 12px 8px 10px;
+    border-radius: 16px;
+    border: 2px solid rgba(207, 224, 195, 0.9);
+    background: rgba(0, 0, 0, 0.75);
+    color: #cfe0c3;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stat-label,
+.stat-sub {
+    font-size: 0.75rem;
+    line-height: 1.2;
+    color: #cfe0c3;
+}
+
+.stat-card strong {
+    font-size: 1.8rem;
+    line-height: 1.1;
+    font-weight: 700;
+    margin: 4px 0 2px;
+}
+
+.sheet-center-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 620px;
+}
+
+.sheet-identity-card {
+    position: relative;
+    width: 100%;
+    min-height: 212px;
+    padding: 18px 24px 18px 24px;
+    border-radius: 40px;
+    border: 3px solid rgba(207, 224, 195, 0.9);
+    background: rgba(0, 0, 0, 0.75);
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.sheet-identity-text {
+    flex: 1;
+    padding-top: 8px;
+}
+
+.sheet-identity-text h1 {
+    margin: 0 0 10px;
+    font-size: 3rem;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    font-weight: 700;
+    color: #cfe0c3;
+}
+
+.sheet-identity-text p {
+    margin: 0;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    color: #cfe0c3;
+}
+
+.sheet-level-badge {
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.2);
+    border: 3px solid rgba(255, 204, 0, 0.9);
+    color: #0b0d0e;
+    font-weight: 700;
+    margin-right: 16px;
+}
+
+.sheet-level-badge span {
+    font-size: 0.75rem;
+    line-height: 1;
+}
+
+.sheet-level-badge strong {
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.sheet-identity-actions {
+    position: absolute;
+    right: 30px;
+    bottom: 17px;
+    display: flex;
+    gap: 10px;
+}
+
+.sheet-upgrade-button,
+.sheet-delete-button {
+    min-width: 110px;
+    height: 30px;
+    border: none;
+    border-radius: 7px;
+    background: #70a9a1;
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding: 0 12px;
+    cursor: pointer;
+}
+
+.sheet-upgrade-button {
+    background: #70a9a1;
+}
+
+.sheet-delete-button {
+    background: #c0392b;
+}
+
+.sheet-delete-button:hover:not(:disabled) {
+    background: #a93226;
+}
+
+.sheet-upgrade-button:disabled,
+.sheet-delete-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.sheet-identity-text p.sheet-delete-error {
+    margin-top: 8px;
+    color: #ff8a80;
+}
+
+.sheet-characteristics-panel,
+.sheet-save-panel {
+    width: 100%;
+    border-radius: 24px;
+    border: 2px solid rgba(207, 224, 195, 0.9);
+    background: rgba(0, 0, 0, 0.75);
+    padding: 18px 18px 16px;
+    box-sizing: border-box;
+}
+
+.sheet-characteristics-panel h2,
+.sheet-save-panel h2 {
+    margin: 0 0 16px;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #cfe0c3;
+    text-align: center;
+}
+
+.characteristics-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.characteristic-box {
+    position: relative;
+    height: 116px;
+    border-radius: 16px;
+    background: rgba(207, 224, 195, 0.9);
+    border: 2px solid rgba(64, 121, 140, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #0b0d0e;
+    text-align: center;
+}
+
+.characteristic-value-box {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    width: 54px;
+    height: 26px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.characteristic-modifier {
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.characteristic-score-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 12px;
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.characteristic-name {
+    margin-top: 6px;
+    font-size: 0.75rem;
+    line-height: 1.2;
+}
+
+.save-panel {
+    display: block;
+}
+
+.save-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.save-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 0 12px 0 10px;
+    height: 34px;
+    border-radius: 6px;
+    background: rgba(207, 224, 195, 0.9);
+    color: #0b0d0e;
+}
+
+.save-row:not(.is-proficient) {
+    opacity: 0.72;
+}
+
+.save-label-block {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+}
+
+.save-bullet {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: rgba(64, 121, 140, 0.8);
+    display: block;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.45);
+}
+
+.save-score-box {
+    min-width: 48px;
+    height: 22px;
+    border-radius: 5px;
+    border: 2px solid rgba(64, 121, 140, 0.8);
+    background: rgba(255, 255, 255, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.sheet-right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    width: 430px;
+}
+
+.sheet-right-panel {
+    width: 100%;
+    border-radius: 18px;
+    border: 2px solid rgba(207, 224, 195, 0.9);
+    background: rgba(0, 0, 0, 0.75);
+    box-sizing: border-box;
+    padding: 16px 18px 10px;
+}
+
+.skills-title {
+    margin: 0 0 12px;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    text-align: center;
+    color: #cfe0c3;
+}
+
+.skills-header-row {
+    display: grid;
+    grid-template-columns: 24px 108px minmax(0, 1fr) 52px;
+    gap: 16px;
+    align-items: center;
+    padding: 0 4px 10px;
+    border-bottom: 1px solid rgba(207, 224, 195, 0.7);
+    color: #cfe0c3;
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: none;
+}
+
+.skills-header-row span {
+    white-space: nowrap;
+    text-align: center;
+}
+
+.skills-header-row span:nth-child(3) {
+    text-align: left;
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 8px;
+}
+
+.skill-row {
+    display: grid;
+    grid-template-columns: 24px 108px minmax(0, 1fr) 52px;
+    gap: 16px;
+    align-items: center;
+    min-height: 28px;
+    color: #cfe0c3;
+}
+
+.skill-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid rgba(207, 224, 195, 0.9);
+    display: block;
+    justify-self: center;
+}
+
+.skill-dot.active {
+    background: rgba(207, 224, 195, 0.9);
+}
+
+.skill-modifier,
+.skill-label,
+.skill-bonus {
+    font-size: 0.95rem;
+}
+
+.skill-modifier {
+    color: #cfe0c3;
+    text-transform: none;
+    justify-self: center;
+    text-align: center;
+    width: 100%;
+}
+
+.skill-label {
+    min-width: 0;
+    justify-self: start;
+    text-align: left;
+}
+
+.skill-bonus {
+    justify-self: end;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    height: 22px;
+    border-radius: 5px;
+    background: rgba(207, 224, 195, 0.9);
+    color: #0b0d0e;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.sheet-mastery-panel {
+    width: 100%;
+    border-radius: 18px;
+    border: 2px solid rgba(207, 224, 195, 0.9);
+    background: rgba(0, 0, 0, 0.75);
+    box-sizing: border-box;
+    padding: 16px 18px 12px;
+}
+
+.mastery-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.mastery-tab {
+    border: none;
+    border-radius: 7px;
+    min-height: 30px;
+    padding: 0 14px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    background: #70a9a1;
+    color: white;
+}
+
+.mastery-tab.is-active {
+    background: #9ec1a3;
+}
+
+.mastery-content {
+    border-top: 1px solid rgba(207, 224, 195, 0.7);
+    padding-top: 12px;
+}
+
+.mastery-content h3 {
+    margin: 0 0 12px;
+    font-size: 1.5rem;
+    color: #cfe0c3;
+}
+
+.mastery-content p {
+    margin: 0 0 8px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #cfe0c3;
+}
+
+.attacks-header-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(70px, 0.85fr) minmax(0, 1.3fr);
+    gap: 12px;
+    align-items: start;
+    padding: 0 4px 10px;
+    border-bottom: 1px solid rgba(207, 224, 195, 0.7);
+    color: #cfe0c3;
+    font-size: 0.72rem;
+    font-weight: 600;
+}
+
+.attacks-header-row span:first-child {
+    text-align: left;
+}
+
+.attacks-header-row span:nth-child(2) {
+    text-align: center;
+}
+
+.attacks-header-row span:last-child {
+    text-align: left;
+}
+
+.attacks-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 8px;
+}
+
+.attack-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(70px, 0.85fr) minmax(0, 1.3fr);
+    gap: 12px;
+    align-items: start;
+    min-height: 28px;
+    color: #cfe0c3;
+}
+
+.attack-name {
+    font-size: 0.95rem;
+    font-weight: 600;
+    min-width: 0;
+    text-align: left;
+}
+
+.attack-atk {
+    font-size: 0.85rem;
+    text-align: center;
+    min-width: 0;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+.attack-damage {
+    font-size: 0.85rem;
+    line-height: 1.35;
+    min-width: 0;
+    overflow-wrap: break-word;
+    white-space: normal;
+    text-align: left;
+}
+
+.capacities-panel {
+    width: 100%;
+    border-radius: 24px;
+    border: 2px solid rgba(207, 224, 195, 0.9);
+    background: rgba(0, 0, 0, 0.75);
+    padding: 18px 18px 16px;
+    box-sizing: border-box;
+}
+
+.capacities-panel h2 {
+    margin: 0 0 16px;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #cfe0c3;
+    text-align: center;
+}
+
+.capacities-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.capacity-row {
+    padding: 10px 14px;
+    border-radius: 6px;
+    color: #cfe0c3;
+}
+
+.capacity-row p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* En dessous de 1100px, les 3 colonnes fixes (120px + 620px + 430px, ~1214px)
+   ne rentrent plus : on empile tout en une seule colonne. Les stat cards de
+   gauche passent en rangée qui se replie (3 puis 2, comme sur mobile natif)
+   plutôt qu'en colonne verticale trop étroite. */
+@media (max-width: 1100px) {
+    .character-sheet-layout {
+        grid-template-columns: 1fr;
+        width: 100%;
+        max-width: calc(100% - 32px);
+        padding: 100px 0 40px;
+    }
+
+    .sheet-left-column,
+    .sheet-center-column,
+    .sheet-right-column {
+        width: 100%;
+    }
+
+    .sheet-left-column {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .stat-card {
+        width: calc(33.333% - 12px);
+        min-width: 96px;
+    }
+}
+
+/* Vue mobile : on resserre polices, paddings et grilles à largeur fixe
+   (colonnes des tableaux compétences/attaques) pour que rien ne déborde
+   sur un écran ~360-390px. */
+@media (max-width: 700px) {
+    .character-sheet-layout {
+        padding: 90px 12px 32px;
+        gap: 16px;
+    }
+
+    .sheet-left-column {
+        gap: 10px;
+    }
+
+    .stat-card {
+        width: calc(50% - 8px);
+        min-height: 90px;
+        padding: 10px 8px 8px;
+    }
+
+    .stat-card strong {
+        font-size: 1.4rem;
+    }
+
+    .sheet-identity-card {
+        padding: 16px 16px 50px;
+        border-radius: 28px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .sheet-identity-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .sheet-identity-text p {
+        font-size: 0.9rem;
+    }
+
+    .sheet-level-badge {
+        width: 64px;
+        height: 64px;
+        margin-right: 0;
+    }
+
+    .sheet-identity-actions {
+        right: 16px;
+        bottom: 14px;
+    }
+
+    .sheet-upgrade-button,
+    .sheet-delete-button {
+        min-width: 90px;
+        height: 26px;
+        font-size: 0.8rem;
+    }
+
+    .sheet-characteristics-panel,
+    .sheet-save-panel,
+    .sheet-right-panel,
+    .sheet-mastery-panel,
+    .capacities-panel {
+        padding: 14px 12px 12px;
+        border-radius: 16px;
+    }
+
+    .characteristics-grid {
+        gap: 8px;
+    }
+
+    .characteristic-box {
+        height: 96px;
+    }
+
+    .characteristic-value-box {
+        width: 25%;
+        height: 25%;
+    }
+
+    .skills-header-row,
+    .skill-row {
+        grid-template-columns: 44px minmax(60px, 78px) minmax(0, 1fr) 40px;
+        gap: 6px 10px;
+    }
+
+    .skills-header-row {
+        padding-bottom: 14px;
+    }
+
+    .skills-header-row span {
+        white-space: normal;
+        line-height: 1.15;
+        font-size: 0.65rem;
+        min-width: 0;
+    }
+
+    .skills-list {
+        gap: 14px;
+    }
+
+    .skill-modifier,
+    .skill-label {
+        font-size: 0.82rem;
+        line-height: 1.2;
+    }
+
+    .attacks-header-row,
+    .attack-row {
+        gap: 8px;
+    }
+
+    .mastery-tab {
+        min-height: 34px;
+        padding: 0 10px;
+        font-size: 0.75rem;
+    }
+}

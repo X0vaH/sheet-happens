@@ -1,0 +1,26 @@
+---
+description: Product scope limits — do not expand without explicit request
+alwaysApply: true
+---
+
+# Scope limits
+
+Do not add features or data that widen project scope unless the user explicitly asks.
+
+Excluded by design:
+
+- Multiclassing
+- Classes other than Barbarian, Cleric, Fighter, Wizard, Rogue (French UI names follow the catalog)
+- Races outside the base Player's Handbook
+- Character level above 5
+- More than one subclass per class
+- More than 5 saved characters per user
+
+When requirements conflict, **docs/rencontres-client.md** overrides **docs/cahier-des-charges.md**.
+
+Documentation and issues: **French**. Code identifiers: **English**.
+Comments/PHPDoc and client-facing JSON messages: **French** (as in existing code).
+Commits: **English**.
+
+Before marking work done: `composer test` and `./vendor/bin/pint --test` must pass.
+When `agent/` changed: its copies under `.cursor/` and `.claude/` must be updated too.

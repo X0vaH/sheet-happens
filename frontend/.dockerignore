@@ -1,0 +1,18 @@
+.git
+.gitignore
+.github
+.idea
+.vscode
+node_modules
+npm-debug.log
+dist
+coverage
+playwright-report
+test-results
+.claude
+.cursor
+tests
+# Secrets stay out of the image. VITE_* for local Docker comes from Compose.
+.env
+.env.*
+!.env.example

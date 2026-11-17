@@ -1,0 +1,42 @@
+---
+description: PHPUnit tests — Feature/Unit/Integration, RefreshDatabase, Sanctum SPA
+globs: tests/**
+alwaysApply: false
+---
+
+# Tests (PHPUnit)
+
+## Layout
+
+- **`tests/Feature/`** — HTTP tests against controllers (Auth, Character,
+  Ruleset, LevelUp). Prefer `getJson` / `postJson` with
+  `RefreshDatabase`.
+- **`tests/Unit/`** — model/domain units (`Catalog/`, `CharacterSheet/`).
+- **`tests/Integration/`** — concurrency and heavier cases
+  (`composer test:concurrency`).
+
+## Auth / Sanctum
+
+- Auth is stateful SPA (cookie/session). Sanctum only starts the session when
+  the request origin is listed in `SANCTUM_STATEFUL_DOMAINS`. Feature tests
+  that hit authenticated routes must send an `Origin` header matching a
+  stateful domain (see `ORIGIN_HEADERS` in `CharacterControllerTest`).
+- Use `$this->actingAs($user)` for authenticated flows.
+
+## Running
+
+- Requires **PHP 8.4+** and a `.env` with a non-empty `APP_KEY`
+  (`cp .env.example .env` then `php artisan key:generate` on a fresh
+  checkout). Details: `AGENTS.md`.
+- `composer test` runs PHPUnit via Artisan (`tests/Unit`, `tests/Feature`
+  per `phpunit.xml`; in-memory SQLite).
+- Before marking work done: also `./vendor/bin/pint --test`.
+
+## Style
+
+- One test class per controller/domain area, matching existing names
+  (`CharacterControllerTest`, `RulesetControllerTest`, etc.).
+- Prefer Laravel testing helpers over custom HTTP clients. Extend
+  `Tests\TestCase`.
+- When catalog or API contract shape changes, update Feature tests (and any
+  shared helpers under `tests/Support/`) together.

@@ -1,0 +1,226 @@
+/* Figma 187:443 — 1920 x 1080. */
+.creation-skills-page {
+    padding-top: 23px;
+    padding-bottom: 50px;
+}
+.creation-skills-page .creation-steps {
+    transform: translateX(24px);
+}
+.skills-layout {
+    display: grid;
+    grid-template-columns: 497px 593px;
+    gap: 39px;
+    width: 1129px;
+    margin: 91.17px auto 0;
+    transform: translateX(76.5px);
+    align-items: start;
+}
+.skills-identity {
+    margin: 6px 0 0 4px;
+    width: 459px;
+    min-height: 562px;
+    padding-top: 7px;
+}
+.skills-identity h3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    margin-top: 32px;
+}
+.skills-abilities {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    justify-content: space-between;
+    gap: 27px 0;
+    width: 378px;
+    max-width: 100%;
+    margin: 30px auto 0;
+    text-align: center;
+}
+.skill-ability {
+    position: relative;
+    height: 80px;
+    border: 2px solid #40798c;
+    border-radius: 16px;
+    background: #cfe0c3;
+    color: #000;
+    padding-top: 4px;
+}
+.skill-ability > span {
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
+.skill-ability > strong {
+    display: grid;
+    place-items: center;
+    width: 55px;
+    height: 32px;
+    margin: 4px auto 0;
+    border: 1px solid #40798c;
+    border-radius: 7px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+}
+.skill-ability-modifier {
+    position: absolute;
+    top: 65px;
+    left: calc(50% - 23.5px);
+    width: 47px;
+    height: 22.8372px;
+    display: grid;
+    place-items: center;
+}
+.skill-ability-modifier img {
+    position: absolute;
+    inset: 0;
+    width: 47px;
+    height: 22.8372px;
+}
+.skill-ability-modifier span {
+    position: relative;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+.skills-summary .abilities-derived {
+    margin-top: 36px;
+}
+.skills-picker {
+    min-height: 757px;
+    padding: 15px 27px 40px 20px;
+}
+.skills-picker h1,
+.skills-picker h2 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.skills-choices {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 263px));
+    gap: 24px 21px;
+}
+.skills-choices button {
+    min-height: 110px;
+    padding: 7px 4px 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #40798c;
+    border-radius: 5px;
+    background: #cfe0c3;
+    color: #000;
+    cursor: pointer;
+    font-family: Inter, sans-serif;
+}
+.skills-choices button[aria-pressed='true'] {
+    background: #1f363d;
+    color: #fff;
+}
+.skills-choices button[aria-disabled='true'] {
+    cursor: default;
+}
+.skills-choices strong {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+}
+.skills-choices span {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+}
+.skills-choices :focus-visible {
+    outline: 3px solid #cfe0c3;
+    outline-offset: 4px;
+}
+.skills-count {
+    margin-top: 48px;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: center;
+}
+.skills-actions {
+    margin-top: 37px;
+    transform: translateX(-12px);
+    gap: 13px;
+}
+.skills-actions a {
+    transform: none;
+    width: 217px;
+}
+.skills-actions button:disabled {
+    background: var(--creation-disabled);
+    cursor: default;
+}
+@media (max-width: 1400px) {
+    .creation-skills-page .creation-steps {
+        transform: none;
+    }
+    .skills-layout {
+        transform: none;
+        width: 100%;
+        grid-template-columns: minmax(0, 497px) minmax(0, 593px);
+        justify-content: center;
+        gap: 24px;
+    }
+    .skills-identity {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+@media (max-width: 1050px) {
+    .skills-layout {
+        grid-template-columns: minmax(0, 593px);
+        margin-top: 40px;
+        gap: 32px;
+    }
+    .skills-summary {
+        width: min(497px, 100%);
+        justify-self: center;
+    }
+}
+@media (max-width: 620px) {
+    .skills-identity {
+        min-height: 0;
+        padding-bottom: 40px;
+    }
+    .skills-abilities {
+        grid-template-columns: repeat(3, 80px);
+        gap: 27px 0;
+    }
+    .skills-picker {
+        padding: 20px 16px 32px;
+        min-height: 0;
+    }
+    .skills-picker h1 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .skills-choices {
+        gap: 16px 12px;
+    }
+    .skills-choices strong {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .skills-choices span {
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .skills-count {
+        font-size: 24px;
+        line-height: 32px;
+        margin-top: 32px;
+    }
+    .skills-actions {
+        transform: none;
+    }
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "index": "reckless-attack",
+    "name": "Attaque téméraire",
+    "description": "Vous attaquez avec témérité : vos attaques de mêlée basées sur la Force sont avantagées, mais vos ennemis gagnent l’avantage contre vous jusqu’à votre prochain tour."
+  },
+  {
+    "index": "danger-sense",
+    "name": "Sens du danger",
+    "description": "Vous avez l’avantage aux jets de sauvegarde de Dextérité contre les effets que vous voyez, comme les pièges et certains sorts."
+  },
+  {
+    "index": "frenzy",
+    "name": "Frénésie",
+    "description": "Pendant la rage, vous pouvez effectuer une attaque bonus de corps à corps à chaque tour et subissez un niveau d’épuisement à la fin de la rage."
+  },
+  {
+    "index": "barbarian-extra-attack",
+    "name": "Attaque supplémentaire",
+    "description": "Vous pouvez porter deux attaques lors de l’action Attaquer."
+  },
+  {
+    "index": "fast-movement",
+    "name": "Déplacement rapide",
+    "description": "Votre vitesse augmente de 3 m tant que vous ne portez pas d’armure lourde."
+  },
+  {
+    "index": "channel-divinity-1-rest",
+    "name": "Canalisation d’énergie divine",
+    "description": "Vous canalisez l’énergie de votre divinité pour produire des effets magiques, avec un quota récupéré après un repos."
+  },
+  {
+    "index": "channel-divinity-turn-undead",
+    "name": "Renvoi des morts-vivants",
+    "description": "En action, vous repoussez les morts-vivants qui ratent un jet de sauvegarde de Sagesse et ils fuient sans pouvoir s’approcher de vous."
+  },
+  {
+    "index": "channel-divinity-preserve-life",
+    "name": "Préservation de la vie",
+    "description": "Vous soignez un nombre de points de vie égal au quintuple de votre niveau de clerc, répartis entre les créatures proches."
+  },
+  {
+    "index": "destroy-undead-cr-1-2-or-below",
+    "name": "Destruction des morts-vivants",
+    "description": "Les morts-vivants qui ratent leur sauvegarde contre votre renvoi sont immédiatement détruits s’ils sont faibles."
+  },
+  {
+    "index": "action-surge-1-use",
+    "name": "Sursaut d'action",
+    "description": "Vous pouvez prendre une action supplémentaire sur votre tour, puis devez terminer un repos avant de la réutiliser."
+  },
+  {
+    "index": "cunning-action",
+    "name": "Ruse",
+    "description": "Vous gagnez une action bonus pour Foncer, vous cacher ou vous désengager."
+  },
+  {
+    "index": "fast-hands",
+    "name": "Mains agiles",
+    "description": "Votre action bonus peut servir à Escamoter, désarmer un piège, crocheter une serrure ou utiliser un objet."
+  },
+  {
+    "index": "second-story-work",
+    "name": "Monte-en-l’air",
+    "description": "Vous grimpez sans coût de déplacement supplémentaire et gagnez de la distance lors des sauts avec élan."
+  },
+  {
+    "index": "uncanny-dodge",
+    "name": "Esquive instinctive",
+    "description": "Vous pouvez utiliser votre réaction pour réduire de moitié les dégâts d’une attaque que vous voyez."
+  },
+  {
+    "index": "evocation-savant",
+    "name": "Savant en évocation",
+    "description": "Vous réduisez de moitié le coût en temps et en or pour copier les sorts d’évocation dans votre grimoire."
+  },
+  {
+    "index": "sculpt-spells",
+    "name": "Sculpture des sorts",
+    "description": "Vous pouvez créer des zones de sécurité dans les effets d’évocation et protéger un nombre limité de créatures."
+  }
+]

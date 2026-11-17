@@ -1,0 +1,40 @@
+*.log
+.DS_Store
+.env
+.env.backup
+.env.production
+.phpactor.json
+.phpunit.result.cache
+/.codex
+# Cursor: ignore personal/local tooling; keep shared agent copies + cli permissions
+/.cursor/*
+!/.cursor/cli.json
+!/.cursor/rules/
+!/.cursor/rules/**
+!/.cursor/skills/
+!/.cursor/skills/**
+
+# Claude: ignore personal/local tooling; keep shared agent copies
+/.claude/*
+!/.claude/rules/
+!/.claude/rules/**
+!/.claude/skills/
+!/.claude/skills/**
+/.idea
+/.nova
+/.phpunit.cache
+/.vscode
+/.zed
+/auth.json
+/public/storage
+/storage/*.key
+/storage/pail
+/vendor
+_ide_helper.php
+Homestead.json
+Homestead.yaml
+Thumbs.db
+/node_modules
+
+# Artefact Windows créé par les commandes > nul lancées depuis WSL
+NUL

@@ -1,0 +1,32 @@
+---
+description: Character creation — catalog, draft, payload, local configs
+paths:
+    - 'src/**/characterCreation/**'
+    - 'src/pages/characterCreation/**'
+    - 'src/utils/characterCreation/**'
+    - 'src/api/characterCreation.js'
+    - 'src/context/CreationOptions*'
+    - 'src/hooks/useCreationOptions.js'
+---
+
+# Character creation
+
+## Data sources
+
+- **API catalog**: `fetchCreationOptions()` → `/api/rulesets/current/character-creation-options`. Creation UI and validation should use catalog names/ids from `CreationOptionsProvider` / `useCreationOptions`.
+- **Local configs** (`src/configs/`): only for what the API catalog does not provide yet — starting equipment counts, class skill counts, species languages, choosable spell lists where needed. See `characterCreation.js`, `spellCatalog.js`, `spells.json`.
+- **Submit**: `createCharacter(payload)` in `src/api/characterCreation.js` → `POST /api/characters`.
+
+## Draft vs payload
+
+- The **draft** (creation wizard state) uses **catalog display names** (and patterns already in the codebase).
+- **Payload** for the API uses **ids** — build it with `buildCharacterPayload(options, draft)` in `src/utils/characterCreation/characterPayload.js`. Do not hand-roll id mapping elsewhere.
+- Spell and language choices must resolve through the catalog (`findByName`, class spell lists). Do not invent spell or language ids locally.
+
+## Class features with options
+
+- Options such as fighting style come from the **catalog** like any other class feature with choices. `fightingStyles.js` is **not** used by the creation flow; it remains for predefined characters (`characters.js`, sheet, home).
+
+## Tests
+
+- Playwright creation tests mock the API via `tests/helpers/test.js` and fixtures in `tests/fixtures/creationOptions.js`. When catalog shape changes, update fixtures and specs together.

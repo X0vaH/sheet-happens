@@ -1,0 +1,321 @@
+{
+  "Barbare": {
+    "2": {
+      "features": [
+        [
+          "Attaque téméraire",
+          "Vous pouvez obtenir l’avantage sur certaines attaques de mêlée basées sur la Force, mais devenez plus vulnérable jusqu’à votre prochain tour."
+        ],
+        [
+          "Sens du danger",
+          "Vous obtenez l’avantage sur certaines sauvegardes de Dextérité contre des dangers que vous pouvez percevoir."
+        ]
+      ],
+      "progression": {
+        "notes": [
+          "Nouvelle capacité débloquée"
+        ],
+        "spell_count": 0,
+        "cantrip_count": 0,
+        "ability_points": 0,
+        "slots": []
+      }
+    },
+    "3": {
+      "features": [],
+      "progression": {
+        "notes": [
+          "Votre nombre de Rages disponibles passe de 2 à 3."
+        ],
+        "spell_count": 0,
+        "cantrip_count": 0,
+        "ability_points": 0,
+        "slots": []
+      }
+    },
+    "4": {
+      "features": [],
+      "progression": {
+        "notes": [],
+        "spell_count": 0,
+        "cantrip_count": 0,
+        "ability_points": 2,
+        "slots": []
+      }
+    },
+    "5": {
+      "features": [
+        [
+          "Déplacement rapide",
+          "Votre vitesse augmente de 10 ft tant que vous ne portez pas d’armure lourde."
+        ],
+        [
+          "Attaque supplémentaire",
+          "Lorsque vous utilisez l’action Attaquer, vous effectuez maintenant 2 attaques au lieu d’une."
+        ]
+      ],
+      "progression": {
+        "notes": [
+          "Votre bonus de maîtrise passe de +2 à +3."
+        ],
+        "spell_count": 0,
+        "cantrip_count": 0,
+        "ability_points": 0,
+        "slots": []
+      }
+    }
+  },
+  "Clerc": {
+    "2": {
+      "features": [
+        [
+          "Canalisation d’énergie divine",
+          "Vous pouvez canaliser une énergie divine pour produire des effets spéciaux liés à votre classe et à votre domaine."
+        ],
+        [
+          "Renvoi des morts-vivants",
+          "Utilisez votre Canalisation pour tenter de faire fuir les morts-vivants proches affectés."
+        ],
+        [
+          "Capacité de domaine",
+          "Votre Domaine divin vous donne une nouvelle façon d’utiliser votre Canalisation."
+        ]
+      ],
+      "progression": {
+        "notes": [
+          "Nouvelle capacité débloquée"
+        ],
+        "spell_count": 0,
+        "cantrip_count": 0,
+        "ability_points": 0,
+        "slots": [
+          3
+        ]
+      }
+    },
+    "3": {
+      "features": [],
+      "progression": {
+        "notes": [
+          "Vous pouvez désormais préparer et lancer des sorts de Clerc de niveau 2."
+        ],
+        "spell_count": 0,
+        "cantrip_count": 0,
+        "ability_points": 0,
+        "slots": [
+          4,
+          2
+        ]
+      }
+    },
+    "4": {
+      "features": [],
+      "progression": {
+        "notes": [],
+        "spell_count": 0,
+        "cantrip_count": 1,
+        "ability_points": 2,
+        "slots": [
+          4,
+          3
+        ]
+      }
+    },
+    "5": {
+      "features": [
+        [
+          "Destruction des morts-vivants",
+          "Certains morts-vivants suffisamment faibles affectés par votre Renvoi peuvent maintenant être détruits."
+        ]
+      ],
+      "progression": {
+        "notes": [
+          "Votre bonus de maîtrise passe de +2 à +3.",
+          "Vous pouvez désormais préparer et lancer des sorts de Clerc de niveau 3."
+        ],
+        "spell_count": 0,
+        "cantrip_count": 0,
+        "ability_points": 0,
+        "slots": [
+          4,
+          3,
+          2
+        ]
+      }
+    }
+  },
+  "Guerrier": {
+    "2": {
+      "features": [
+        [
+          "Sursaut d’action",
+          "Une fois entre deux repos appropriés, vous pouvez effectuer une action supplémentaire pendant votre tour."
+        ]
+      ],
+      "progression": {
+        "notes": [
+          "Nouvelle capacité débloquée"
+        ],
+        "spell_count": 0,
+        "cantrip_count": 0,
+        "ability_points": 0,
+        "slots": []
+      }
+    },
+    "3": {
+      "features": [],
+      "progression": {
+        "notes": [],
+        "spell_count": 0,
+        "cantrip_count": 0,
+        "ability_points": 0,
+        "slots": []
+      }
+    },
+    "4": {
+      "features": [],
+      "progression": {
+        "notes": [],
+        "spell_count": 0,
+        "cantrip_count": 0,
+        "ability_points": 2,
+        "slots": []
+      }
+    },
+    "5": {
+      "features": [
+        [
+          "Attaque supplémentaire",
+          "Lorsque vous utilisez l’action Attaquer, vous pouvez maintenant effectuer 2 attaques au lieu d’une."
+        ]
+      ],
+      "progression": {
+        "notes": [
+          "Votre bonus de maîtrise passe de +2 à +3."
+        ],
+        "spell_count": 0,
+        "cantrip_count": 0,
+        "ability_points": 0,
+        "slots": []
+      }
+    }
+  },
+  "Magicien": {
+    "2": {
+      "features": [],
+      "progression": {
+        "notes": [],
+        "spell_count": 2,
+        "cantrip_count": 0,
+        "ability_points": 0,
+        "slots": [
+          3
+        ]
+      }
+    },
+    "3": {
+      "features": [],
+      "progression": {
+        "notes": [
+          "Vous pouvez maintenant apprendre, préparer et lancer des sorts de niveau 2."
+        ],
+        "spell_count": 2,
+        "cantrip_count": 0,
+        "ability_points": 0,
+        "slots": [
+          4,
+          2
+        ]
+      }
+    },
+    "4": {
+      "features": [],
+      "progression": {
+        "notes": [],
+        "spell_count": 2,
+        "cantrip_count": 1,
+        "ability_points": 2,
+        "slots": [
+          4,
+          3
+        ]
+      }
+    },
+    "5": {
+      "features": [],
+      "progression": {
+        "notes": [
+          "Votre bonus de maîtrise passe de +2 à +3.",
+          "Vous pouvez maintenant apprendre, préparer et lancer des sorts de niveau 3."
+        ],
+        "spell_count": 2,
+        "cantrip_count": 0,
+        "ability_points": 0,
+        "slots": [
+          4,
+          3,
+          2
+        ]
+      }
+    }
+  },
+  "Roublard": {
+    "2": {
+      "features": [
+        [
+          "Ruse",
+          "Vous pouvez utiliser une action bonus pour vous désengager, vous cacher ou foncer."
+        ]
+      ],
+      "progression": {
+        "notes": [
+          "Nouvelle capacité débloquée"
+        ],
+        "spell_count": 0,
+        "cantrip_count": 0,
+        "ability_points": 0,
+        "slots": []
+      }
+    },
+    "3": {
+      "features": [],
+      "progression": {
+        "notes": [
+          "Vos dégâts supplémentaires d’Attaque sournoise passent de 1d6 à 2d6."
+        ],
+        "spell_count": 0,
+        "cantrip_count": 0,
+        "ability_points": 0,
+        "slots": []
+      }
+    },
+    "4": {
+      "features": [],
+      "progression": {
+        "notes": [],
+        "spell_count": 0,
+        "cantrip_count": 0,
+        "ability_points": 2,
+        "slots": []
+      }
+    },
+    "5": {
+      "features": [
+        [
+          "Esquive instinctive",
+          "Utilisez votre réaction contre une attaque admissible que vous voyez pour réduire ses dégâts de moitié."
+        ]
+      ],
+      "progression": {
+        "notes": [
+          "Votre bonus de maîtrise passe de +2 à +3.",
+          "Vos dégâts supplémentaires d’Attaque sournoise passent de 2d6 à 3d6."
+        ],
+        "spell_count": 0,
+        "cantrip_count": 0,
+        "ability_points": 0,
+        "slots": []
+      }
+    }
+  }
+}

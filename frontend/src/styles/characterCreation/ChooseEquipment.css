@@ -1,0 +1,126 @@
+.equipment-layout {
+    display: grid;
+    grid-template-columns: 280px minmax(0, 1fr);
+    gap: 32px;
+    width: min(1260px, 100%);
+    margin: 48px auto 0;
+    align-items: start;
+}
+.equipment-summary {
+    padding: 24px 18px;
+    min-width: 0;
+}
+.equipment-summary h2 {
+    font-size: 32px;
+    line-height: 40px;
+}
+.equipment-summary p {
+    font-size: 18px;
+    line-height: 28px;
+}
+.equipment-content {
+    display: grid;
+    gap: 18px;
+    min-width: 0;
+}
+.equipment-content > h1 {
+    text-align: center;
+    font-size: 40px;
+}
+.equipment-section {
+    padding: 22px;
+}
+.equipment-section h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 14px;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+}
+.equipment-item-list {
+    margin-top: 4px;
+    padding-left: 0;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+    list-style: none;
+    text-align: center;
+    text-transform: none;
+}
+.equipment-item-list li {
+    list-style: none;
+}
+.equipment-detail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(210px, 100%), 1fr));
+    gap: 16px;
+}
+.equipment-item-description {
+    display: block;
+    margin-top: 4px;
+    white-space: pre-line;
+    overflow-wrap: anywhere;
+}
+.equipment-item-list li + li {
+    margin-top: 12px;
+}
+.equipment-detail-card {
+    min-width: 0;
+    padding: 14px;
+    border: 2px solid #40798c;
+    border-radius: 5px;
+    text-align: center;
+}
+.equipment-detail-card {
+    background: var(--creation-surface);
+    color: #000;
+}
+.equipment-detail-card strong,
+.equipment-detail-card li {
+    display: block;
+    text-align: center;
+}
+.equipment-actions {
+    margin-top: 28px;
+    transform: none;
+}
+.equipment-actions button:disabled {
+    background: var(--creation-disabled);
+    cursor: default;
+}
+.equipment-layout :is(button, select):focus-visible {
+    outline: 3px solid var(--creation-primary-light);
+    outline-offset: 4px;
+}
+@media (max-width: 950px) {
+    .equipment-layout {
+        grid-template-columns: minmax(0, 1fr);
+        max-width: 760px;
+        gap: 24px;
+    }
+    .equipment-summary {
+        width: min(360px, 100%);
+        justify-self: center;
+    }
+}
+@media (max-width: 620px) {
+    .equipment-layout {
+        margin-top: 30px;
+    }
+    .equipment-content > h1 {
+        font-size: 32px;
+    }
+    .equipment-section {
+        padding: 18px 14px;
+    }
+    .equipment-section h2 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .equipment-actions {
+        gap: 12px;
+    }
+}

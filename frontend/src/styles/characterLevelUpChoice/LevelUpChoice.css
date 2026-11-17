@@ -1,0 +1,538 @@
+.level-up-page {
+    --level-up-surface: #cfe0c3;
+    --level-up-primary: #40798c;
+    --level-up-title-size: 40px;
+    --level-up-title-line: 48px;
+    --level-up-panel-title-size: 32px;
+    --level-up-panel-title-line: 40px;
+    --level-up-subtitle-size: 20px;
+    --level-up-subtitle-line: 28px;
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    flex-direction: column;
+    min-height: 100svh;
+    color: var(--level-up-surface);
+    font:
+        400 16px/24px Inter,
+        sans-serif;
+    background: #1f363d;
+}
+.level-up-page * {
+    box-sizing: border-box;
+}
+.level-up-page .creation-background-tile {
+    object-position: center top;
+}
+.level-up-page .navbar {
+    height: 90px;
+    flex-shrink: 0;
+    border: 0;
+}
+.level-up-loading {
+    display: grid;
+    flex: 1;
+    place-items: center;
+    padding: 24px;
+}
+.level-up-loading .creation-options-status {
+    width: 100%;
+    margin: 0;
+}
+.level-up-layout {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 589px));
+    justify-content: space-between;
+    gap: 40px;
+    width: min(1346px, calc(100% - 48px));
+    margin: 77px auto 40px;
+    align-items: start;
+}
+.level-up-column {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+    min-width: 0;
+}
+.level-up-panel {
+    position: relative;
+    padding: 20px 24px 24px;
+    border: 3px solid rgb(207 224 195 / 75%);
+    border-radius: 40px;
+    background: rgb(0 0 0 / 75%);
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+.level-up-page h1,
+.level-up-page h2,
+.level-up-page h3,
+.level-up-page p {
+    margin: 0;
+}
+.level-up-heading .level-up-hit-points {
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 24px;
+}
+.level-up-page h1 {
+    font-size: var(--level-up-title-size);
+    font-weight: 700;
+    line-height: var(--level-up-title-line);
+}
+.level-up-page h2 {
+    font-size: var(--level-up-panel-title-size);
+    font-weight: 600;
+    line-height: var(--level-up-panel-title-line);
+}
+.level-up-page h3 {
+    font-size: var(--level-up-subtitle-size);
+    font-weight: 600;
+    line-height: var(--level-up-subtitle-line);
+}
+.level-up-panel > h2 {
+    margin-bottom: 16px;
+}
+.level-up-feat-choice label {
+    display: grid;
+    justify-items: center;
+    gap: 8px;
+}
+.level-up-feat-choice select {
+    max-width: 100%;
+}
+.level-up-features h3 {
+    margin: 16px 0 8px;
+}
+.level-up-features summary {
+    font-size: var(--level-up-subtitle-size);
+    line-height: var(--level-up-subtitle-line);
+    font-weight: 600;
+    margin: 16px 0 8px;
+    cursor: pointer;
+}
+.level-up-features .level-up-choices {
+    margin-top: 16px;
+}
+.level-up-features .level-up-choices h2 {
+    font-size: var(--level-up-subtitle-size);
+    line-height: var(--level-up-subtitle-line);
+}
+.level-up-number {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+}
+.level-up-character-name {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    overflow-wrap: anywhere;
+}
+.level-up-heading {
+    display: grid;
+    gap: 4px;
+}
+.level-up-notes {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 24px;
+}
+.level-up-health {
+    min-height: 224px;
+    padding: 4px 26px 12px;
+}
+.level-up-health h2 {
+    font-size: clamp(22px, 1.67vw, 32px);
+    white-space: nowrap;
+}
+.level-up-health-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 26px 12px 18px;
+}
+.level-up-page button,
+.level-up-page select {
+    font: inherit;
+}
+.level-up-health-options button,
+.level-up-subclass-options button,
+.level-up-spell-options button {
+    border: 2px solid var(--level-up-primary);
+    border-radius: 5px;
+    background: var(--level-up-surface);
+    color: #000;
+    cursor: pointer;
+}
+.level-up-page button[aria-pressed='true'] {
+    background: #1f363d;
+    color: #fff;
+}
+.level-up-health-options button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 84px;
+    padding: 0 8px 5px;
+}
+.level-up-health-options span {
+    font-size: 18px;
+    line-height: 24px;
+}
+.level-up-health > p,
+.level-up-slots p {
+    font-size: 16px;
+    line-height: 24px;
+}
+.level-up-health small {
+    font-size: 16px;
+}
+.level-up-features {
+    padding: 20px 24px 24px;
+}
+.level-up-features > div + div {
+    margin-top: 24px;
+}
+.level-up-subclasses {
+    padding: 20px 24px 24px;
+}
+.level-up-subclass-options {
+    display: flex;
+    gap: 14px;
+    margin-top: 16px;
+}
+.level-up-subclass-granted {
+    padding: 16px;
+    border: 2px solid var(--level-up-primary);
+    border-radius: 16px;
+    background: var(--level-up-surface);
+    color: #1f363d;
+}
+.level-up-choices .level-up-subclass-options {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 16px;
+}
+.level-up-choices .level-up-subclass-options button {
+    min-height: 0;
+    padding: 16px;
+    gap: 8px;
+}
+.level-up-subclass-granted > span {
+    display: block;
+}
+.level-up-missing {
+    width: min(600px, calc(100% - 48px));
+    margin: 16px auto;
+}
+.level-up-features details p {
+    white-space: pre-line;
+    text-align: left;
+}
+.level-up-subclass-options button {
+    flex: 1;
+    min-width: 0;
+    min-height: 280px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.level-up-subclass-options strong {
+    font-size: var(--level-up-subtitle-size);
+    line-height: var(--level-up-subtitle-line);
+    font-weight: 600;
+    overflow-wrap: anywhere;
+}
+.level-up-subclass-options span {
+    margin-top: 8px;
+}
+.level-up-subclass-options li strong {
+    font-size: 16px;
+    line-height: 24px;
+}
+.level-up-subclass-introduction {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 24px;
+}
+.level-up-subclass-options .level-up-subclass-description {
+    margin-top: 16px;
+    padding-top: 0;
+    font-size: 16px;
+    line-height: 24px;
+}
+.level-up-health-options small {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 12px;
+}
+.level-up-subclass-options ul {
+    text-align: left;
+    padding-left: 18px;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 8px 0 24px;
+}
+.level-up-abilities {
+    isolation: isolate;
+    background: none;
+    border-color: transparent;
+    padding: 20px 24px 24px;
+}
+.level-up-ability-art {
+    position: absolute;
+    z-index: -1;
+    inset: -3px;
+    background: url('../../assets/level-up-abilities.svg') center / 100% 100%
+        no-repeat;
+}
+.level-up-abilities > p {
+    font-size: 16px;
+    line-height: 24px;
+}
+.level-up-stat-list {
+    display: grid;
+    gap: 10px;
+    margin: 24px auto;
+    width: fit-content;
+    max-width: 100%;
+}
+.level-up-stat-list label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 18px;
+}
+.level-up-stat-list select {
+    border: 2px solid var(--level-up-primary);
+    border-radius: 7px;
+    color: #1f363d;
+    background: var(--level-up-surface);
+    padding: 0 4px;
+}
+.level-up-spells {
+    padding: 20px 24px 24px;
+}
+.level-up-spells > p {
+    font-size: 16px;
+    line-height: 24px;
+}
+.level-up-spell-options {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    padding: 5px;
+    margin: 18px 0 8px;
+}
+.level-up-spell-options button {
+    padding: 8px 6px;
+    min-height: 76px;
+    font-size: 16px;
+    line-height: 24px;
+    overflow-wrap: anywhere;
+}
+.level-up-spell-options small {
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+}
+.level-up-spell-options strong {
+    font-weight: 600;
+}
+.level-up-spell-options button:disabled {
+    opacity: 0.55;
+    cursor: default;
+}
+.level-up-spell-tabs {
+    display: flex;
+    gap: 10px;
+    margin: 0 0 20px;
+}
+.level-up-spell-tabs button {
+    flex: 1;
+    border: 0;
+    border-radius: 7px;
+    padding: 6px;
+    background: #70a9a1;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    cursor: pointer;
+}
+.level-up-spell-tabs button[aria-pressed='true'] {
+    background: #9ec1a3;
+}
+.level-up-divider {
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+.level-up-divider img {
+    display: block;
+}
+.level-up-footer {
+    margin-top: auto;
+    padding: 10px 24px 40px;
+}
+.level-up-actions {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+.level-up-actions a,
+.level-up-actions button {
+    display: grid;
+    place-items: center;
+    width: 165px;
+    min-height: 52px;
+    padding: 10px;
+    border: 0;
+    border-radius: 7px;
+    background: var(--level-up-primary);
+    color: white;
+    text-decoration: none;
+    font:
+        600 14px/20px Inter,
+        sans-serif;
+    cursor: pointer;
+}
+.level-up-actions button:disabled {
+    background: #7d7d7d;
+    cursor: default;
+}
+.level-up-actions button[aria-disabled='true'] {
+    background: #7d7d7d;
+    cursor: pointer;
+}
+.level-up-page :focus-visible {
+    outline: 3px solid #70a9a1;
+    outline-offset: 3px;
+}
+.level-up-confirmation {
+    margin: auto;
+    max-width: min(600px, calc(100% - 32px));
+    max-height: calc(100svh - 40px);
+    padding: 28px;
+    border: 2px solid var(--level-up-surface);
+    border-radius: 24px;
+    background: #1f363d;
+    color: var(--level-up-surface);
+}
+.level-up-confirmation::backdrop {
+    background: rgb(0 0 0 / 70%);
+}
+.level-up-confirmation p {
+    margin-top: 14px;
+}
+.level-up-confirmation .level-up-actions {
+    margin-top: 24px;
+}
+.level-up-missing-dialog {
+    margin: auto;
+    max-width: min(600px, calc(100% - 32px));
+    max-height: calc(100svh - 40px);
+    padding: 28px;
+    border: 2px solid #ffb3b3;
+    border-radius: 12px;
+    background: #5b2028;
+    color: #fff;
+}
+.level-up-missing-dialog::backdrop {
+    background: rgb(0 0 0 / 70%);
+}
+.level-up-missing-dialog p {
+    margin-top: 14px;
+}
+.level-up-missing-dialog ul {
+    padding-left: 24px;
+}
+.level-up-missing-dialog .level-up-actions {
+    margin-top: 24px;
+}
+.sheet-upgrade-button:disabled {
+    opacity: 0.55;
+    cursor: default;
+}
+@media (max-width: 1100px) {
+    .level-up-page .navbar-center {
+        gap: 14px;
+    }
+    .level-up-page .navbar-user {
+        margin-left: 10px;
+    }
+    .level-up-layout {
+        gap: 28px;
+        margin-top: 40px;
+    }
+    .level-up-health h2 {
+        white-space: normal;
+    }
+    .level-up-health-options {
+        margin-inline: 0;
+        gap: 10px;
+    }
+    .level-up-subclass-options {
+        flex-wrap: wrap;
+    }
+    .level-up-subclass-options button {
+        flex-basis: 140px;
+        min-height: 210px;
+    }
+    .level-up-spell-options {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+@media (max-width: 760px) {
+    .level-up-layout {
+        grid-template-columns: minmax(0, 1fr);
+        width: min(589px, calc(100% - 24px));
+        margin: 28px auto;
+        gap: 24px;
+    }
+    .level-up-column {
+        gap: 24px;
+    }
+    .level-up-page .navbar {
+        height: 64px;
+    }
+    .level-up-panel {
+        border-radius: 28px;
+        padding-inline: 14px;
+    }
+    .level-up-health-options {
+        margin-top: 20px;
+    }
+    .level-up-health-options button {
+        font-size: 18px;
+    }
+    .level-up-health-options span {
+        font-size: 14px;
+    }
+    .level-up-stat-list label {
+        gap: 10px;
+    }
+    .level-up-spell-tabs {
+        margin-inline: 0;
+    }
+    .level-up-spell-tabs button {
+        font-size: 16px;
+    }
+    .level-up-actions a,
+    .level-up-actions button {
+        min-width: 0;
+        max-width: 50%;
+        font-size: 14px;
+    }
+}
+@media (max-width: 620px) {
+    .level-up-page {
+        --level-up-title-size: 32px;
+        --level-up-title-line: 40px;
+        --level-up-panel-title-size: 28px;
+        --level-up-panel-title-line: 36px;
+        --level-up-subtitle-size: 18px;
+        --level-up-subtitle-line: 26px;
+    }
+}

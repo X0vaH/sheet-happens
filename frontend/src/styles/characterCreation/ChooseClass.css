@@ -1,0 +1,313 @@
+/* Figma 187:241: 1920 x 1080. Shared panels, typography and buttons come from ChooseRace.css. */
+.creation-class-page {
+    padding-top: 25px;
+    padding-bottom: 51px;
+}
+.creation-class-page .creation-steps {
+    transform: translateX(13px);
+}
+.class-layout {
+    display: grid;
+    grid-template-columns: 320px 571px 571px;
+    column-gap: 42px;
+    align-items: start;
+    width: 1572px;
+    margin: 92.17px 0 0 calc(50% - 674px);
+}
+.class-summary {
+    min-height: 224px;
+    margin-top: 0;
+}
+.class-content {
+    margin-left: 26px;
+    width: 571px;
+}
+.class-equipment-column {
+    margin-left: 26px;
+    width: 571px;
+    display: grid;
+    gap: 24px;
+    min-width: 0;
+}
+.class-equipment {
+    min-height: 608px;
+    padding: 19px 26px 24px 18px;
+}
+.class-equipment h2,
+.class-description h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    text-align: center;
+}
+.class-equipment h2 {
+    margin-bottom: 8px;
+}
+.class-description {
+    min-height: 435px;
+    padding: 10px 16px 20px 25px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+}
+.class-description h2 {
+    margin-bottom: 12px;
+}
+.class-details {
+    display: grid;
+    grid-template-columns: 233px minmax(0, 1fr);
+    gap: 22px;
+    margin-top: 32px;
+}
+.class-details > div > div {
+    margin-top: 32px;
+}
+.class-details ul {
+    padding-left: 30px;
+}
+.class-pending {
+    margin-top: 32px;
+    font-size: 20px;
+    line-height: 28px;
+}
+.class-equipment fieldset {
+    border: 0;
+    border-bottom: 2px dashed var(--creation-surface);
+    margin-bottom: 8px;
+    padding-bottom: 18px;
+    min-width: 0;
+}
+.class-equipment legend {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 5px;
+}
+.equipment-options {
+    display: grid;
+    grid-template-columns: 236px minmax(0, 1fr);
+    gap: 17px;
+}
+.equipment-option {
+    position: relative;
+    min-width: 0;
+}
+.equipment-option button {
+    width: 100%;
+    min-height: 50px;
+    padding: 0 3px;
+    border: 2px solid #40798c;
+    border-radius: 5px;
+    background: var(--creation-surface);
+    color: #000;
+    font:
+        600 18px/24px Inter,
+        sans-serif;
+    cursor: pointer;
+}
+.equipment-option button[aria-pressed='true'] {
+    background: #1f363d;
+    color: #fff;
+}
+.equipment-tooltip {
+    display: none;
+    position: absolute;
+    top: 28px;
+    left: 210px;
+    width: 232px;
+    min-height: 128px;
+    z-index: 2;
+    padding: 2px 4px;
+    border: 3px solid #40798c;
+    border-radius: 10px;
+    background: #70a9a1;
+    color: #fff;
+    font:
+        400 16px/24px Inter,
+        sans-serif;
+}
+.equipment-tooltip strong {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+}
+.equipment-tooltip-item {
+    margin-top: 8px;
+}
+.equipment-tooltip-item + .equipment-tooltip-item {
+    border-top: 1px solid currentColor;
+    padding-top: 8px;
+}
+.equipment-option > button:hover + .equipment-tooltip,
+.equipment-option > button:focus-visible + .equipment-tooltip {
+    display: block;
+}
+.equipment-count {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    text-align: center;
+}
+.class-domain {
+    padding: 24px 20px;
+}
+.class-domain h2 {
+    margin-bottom: 8px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+}
+.class-domain > p {
+    margin-bottom: 18px;
+    text-align: center;
+    font-size: 20px;
+}
+.domain-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 12px;
+}
+.domain-options button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    min-height: 150px;
+    padding: 18px 12px;
+    border: 2px solid #40798c;
+    border-radius: 5px;
+    background: var(--creation-surface);
+    color: #000;
+    font:
+        500 18px/26px Inter,
+        sans-serif;
+    cursor: pointer;
+}
+.domain-options button {
+    text-align: center;
+}
+.domain-options strong,
+.domain-options span {
+    display: block;
+    text-align: center;
+}
+.domain-options button[aria-pressed='true'] {
+    background: #1f363d;
+    color: #fff;
+}
+.class-actions {
+    margin-top: 22px;
+    transform: translateX(-0.5px);
+    gap: 17px;
+}
+.class-actions a {
+    transform: none;
+}
+.class-actions button:disabled {
+    background: var(--creation-disabled);
+    cursor: default;
+}
+.class-layout button:focus-visible {
+    outline: 3px solid var(--creation-surface);
+    outline-offset: 4px;
+}
+@media (max-width: 1850px) {
+    .class-layout {
+        width: 100%;
+        margin-left: 0;
+        grid-template-columns: minmax(220px, 320px) minmax(0, 571px) minmax(
+                0,
+                571px
+            );
+        gap: 24px;
+    }
+    .class-content,
+    .class-equipment-column {
+        margin-left: 0;
+        width: 100%;
+    }
+    .class-content .race-options {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .class-content .race-picker h1 {
+        white-space: normal;
+        font-size: clamp(28px, 2.6vw, 48px);
+    }
+    .class-details {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+    .equipment-options {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+    .equipment-tooltip {
+        left: 0;
+        top: 100%;
+    }
+}
+@media (max-width: 1450px) {
+    .creation-class-page .creation-steps {
+        transform: none;
+    }
+    .class-layout {
+        grid-template-columns: repeat(2, minmax(0, 571px));
+        justify-content: center;
+        margin-top: 40px;
+    }
+    .class-summary {
+        grid-column: 1 / -1;
+        width: 320px;
+        justify-self: center;
+    }
+}
+@media (max-width: 1000px) {
+    .class-layout {
+        grid-template-columns: minmax(0, 571px);
+    }
+    .class-content .race-picker h1 {
+        font-size: 40px;
+    }
+}
+@media (max-width: 620px) {
+    .class-summary {
+        width: min(320px, 100%);
+    }
+    .class-content .race-picker h1,
+    .class-description h2,
+    .class-equipment h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .class-content .race-options {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .class-description,
+    .class-equipment {
+        padding: 20px;
+    }
+    .class-details {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 32px;
+    }
+    .equipment-options {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    .equipment-tooltip {
+        width: min(232px, 100%);
+    }
+    .class-equipment legend {
+        font-size: 20px;
+    }
+}
+
+.equipment-option:last-child .equipment-tooltip {
+    left: auto;
+    right: 0;
+}
+.equipment-tooltip {
+    overflow-wrap: anywhere;
+    pointer-events: none;
+}

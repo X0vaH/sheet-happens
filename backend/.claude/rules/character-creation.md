@@ -1,0 +1,55 @@
+---
+description: Character creation — catalog endpoint, store validation, persistence
+paths:
+  - "app/Http/Controllers/CharacterController.php"
+  - "app/Http/Controllers/RulesetController.php"
+  - "app/Http/Requests/StoreCharacterRequest.php"
+  - "app/Actions/CreateCharacterAction.php"
+  - "app/Http/Resources/**"
+  - "database/seeders/ruleset/**"
+---
+
+# Character creation
+
+## Endpoints
+
+- **API catalog**: `GET /api/rulesets/current/character-creation-options`
+  (`RulesetController::characterCreationOptions`), scoped to the active
+  ruleset (`RulesetSeeder::NAME` / `VERSION`). Creation validation and the
+  frontend consume this catalog — keep its JSON contract stable.
+- **Submit**: `POST /api/characters` (`CharacterController::store` →
+  `StoreCharacterRequest` → `CreateCharacterAction`).
+
+## Catalog contract (do not break)
+
+- `options.abilities` is sorted by `id` (FOR, DEX, CON, INT, SAG, CHA). The
+  frontend indexes characteristics on that order — do not change it.
+- Each item in `options.items` exposes `armor`: `null` if not armor,
+  otherwise `armor_category` (`light`, `medium`, `heavy`, `shield`),
+  `armor_class`, and `dexterity_bonus_limit` (`null` = no cap, `0` = no DEX
+  bonus, `n` = capped at +n). For a shield, `armor_class` is an AC bonus,
+  not a base AC.
+
+## Validation vs persistence
+
+- **Request rules** live in `StoreCharacterRequest` (ids exist, subclass
+  available at level 1 for the class, starting-equipment choices belong to
+  the class, etc.). Prefer extending that FormRequest over ad-hoc checks in
+  the controller.
+- **Persistence / domain assembly** lives in `CreateCharacterAction`. Do not
+  hand-roll catalog id mapping or ownership logic elsewhere.
+- Characters are owned by the authenticated user (`auth:sanctum`). Never
+  expose or mutate another user's character.
+
+## Catalog source
+
+- Seeded under `database/seeders/ruleset/`. JSON shape comes from
+  `app/Http/Resources/` (e.g. `RulesetCharacterOptionsResource`). When the
+  catalog shape changes, update seeders, resources, and Feature tests
+  (`RulesetControllerTest`, `CharacterControllerTest`, etc.) together.
+
+## Related (level-up)
+
+- Level-up options/apply are separate endpoints
+  (`LevelUpController`, `ApplyLevelUpAction`) — still bound by the same
+  scope limits (max level 5, one subclass per class).

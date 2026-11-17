@@ -1,0 +1,25 @@
+.settings-input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 999px;
+    background-color: #d9d6ce;
+    color: #2a2a28;
+    font-size: 0.85rem;
+}
+
+.settings-input::placeholder {
+    color: #6b6a63;
+}
+
+.settings-input:focus {
+    outline: 2px solid #4fb3a9;
+}
+
+@media (max-width: 480px) {
+    .settings-input {
+        min-height: 44px;
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,63 @@
+.creation-page.creation-mobile-design
+    :is(
+        .race-description,
+        .class-description,
+        .background-description,
+        .summary-tabs [role='tabpanel']
+    ) {
+    font-weight: 400;
+}
+
+.creation-page.creation-mobile-design
+    :is(
+        .race-description,
+        .class-description,
+        .background-description,
+        .summary-tabs
+    )
+    :is(h3, p, dt, dd, strong, b) {
+    font-weight: 400;
+}
+
+.creation-page.creation-mobile-design
+    :is(
+        .race-description,
+        .class-description,
+        .background-description,
+        .summary-tabs
+    )
+    h2 {
+    font-weight: 700;
+}
+
+.creation-page.creation-mobile-design
+    :is(.race-description, .class-description, .background-description),
+.creation-page.creation-mobile-design
+    :is(.race-description, .class-description, .background-description)
+    :is(p, dd) {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.creation-page.creation-mobile-design
+    :is(.race-description, .class-description, .background-description)
+    :is(h3, strong, dt) {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.creation-page.creation-mobile-design
+    :is(.race-description, .background-description)
+    :is(dt, dd) {
+    display: block;
+    margin: 0;
+}
+
+.creation-page.creation-mobile-design
+    :is(.race-description, .background-description)
+    ul {
+    padding-left: 30px;
+    list-style: disc;
+}

@@ -1,0 +1,269 @@
+/* Figma 187:300, 1920 x 1080. */
+.creation-abilities-page {
+    padding-top: 23px;
+    padding-bottom: 47px;
+}
+.creation-abilities-page .creation-steps {
+    transform: translateX(4px);
+}
+.abilities-layout {
+    display: grid;
+    grid-template-columns: 497px 599px;
+    gap: 181px;
+    width: 1277px;
+    margin: 94.17px auto 0;
+    transform: translateX(33.5px);
+    align-items: start;
+}
+.abilities-identity {
+    width: 379px;
+    min-height: 224px;
+    margin: 3px 0 0 71px;
+}
+.abilities-derived {
+    display: grid;
+    grid-template-columns: 115px 110px 117px 116px;
+    gap: 13px;
+    margin-top: 36px;
+}
+.abilities-derived > div {
+    min-height: 106px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0 9px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+}
+.abilities-derived .race-panel::before {
+    border-width: 2px;
+    border-radius: 16px;
+}
+.abilities-derived strong {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+}
+.abilities-method {
+    width: 571px;
+    min-height: 240px;
+    margin-left: 18px;
+    padding: 15px 34px 42px;
+}
+.abilities-method h2 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: center;
+}
+.abilities-method .race-options {
+    gap: 23px;
+    margin-top: 57px;
+}
+.abilities-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 162px);
+    gap: 48px 57px;
+    margin-top: 38px;
+}
+.ability-card {
+    height: 171px;
+    position: relative;
+    padding-top: 12px;
+    border: 2px solid #cfe0c3;
+    border-radius: 16px;
+    background: #000;
+    opacity: 0.75;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ability-card label {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+}
+.ability-card input {
+    width: 111px;
+    height: 69px;
+    margin-top: 10px;
+    border: 1px solid #cfe0c3;
+    border-radius: 7px;
+    background: transparent;
+    color: #cfe0c3;
+    font:
+        600 32px/40px Inter,
+        sans-serif;
+    text-align: center;
+    appearance: textfield;
+}
+.ability-card input::-webkit-inner-spin-button,
+.ability-card input::-webkit-outer-spin-button {
+    appearance: none;
+    margin: 0;
+}
+.ability-score-picker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 2px;
+    margin-top: 10px;
+}
+.creation-page .ability-card .ability-score-picker input {
+    width: 52px;
+    min-width: 0;
+    max-width: 100%;
+    height: 65px;
+    margin: 0;
+}
+.ability-score-picker button {
+    flex-shrink: 0;
+    width: 28px;
+    height: 44px;
+    padding: 0;
+    border: 0;
+    border-radius: 7px;
+    background: transparent;
+    color: #cfe0c3;
+    font:
+        600 32px/40px Inter,
+        sans-serif;
+    cursor: pointer;
+}
+.ability-score-picker button:hover:not(:disabled) {
+    background: #40798c;
+}
+.ability-score-picker button:disabled {
+    opacity: 0.35;
+    cursor: default;
+}
+.ability-modifier {
+    position: absolute;
+    top: 141px;
+    width: 90.91px;
+    height: 44.3097px;
+    display: grid;
+    place-items: center;
+}
+.ability-modifier img {
+    position: absolute;
+    inset: 0;
+    width: 90.91px;
+    height: 44.3097px;
+}
+.ability-modifier output {
+    position: relative;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+}
+.abilities-actions {
+    margin-top: 94px;
+    transform: translateX(-6px);
+    gap: 10px;
+}
+.abilities-actions a {
+    transform: none;
+}
+.abilities-actions button:disabled {
+    background: var(--creation-disabled);
+    cursor: default;
+}
+.abilities-message {
+    margin-top: 30px;
+    padding: 20px 24px;
+    font-size: 24px;
+    line-height: 32px;
+}
+.abilities-layout :focus-visible {
+    outline: 3px solid #cfe0c3;
+    outline-offset: 4px;
+}
+@media (max-width: 1450px) {
+    .creation-abilities-page .creation-steps {
+        transform: none;
+    }
+    .abilities-layout {
+        width: 100%;
+        grid-template-columns: minmax(0, 497px) minmax(0, 599px);
+        justify-content: center;
+        gap: 32px;
+        transform: none;
+    }
+    .abilities-identity {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+    }
+    .abilities-derived {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 8px;
+    }
+    .abilities-derived > div {
+        font-size: 16px;
+    }
+    .abilities-method {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .abilities-method .race-options {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+    }
+    .abilities-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 48px 16px;
+    }
+    .ability-card label {
+        font-size: 20px;
+    }
+}
+@media (max-width: 1050px) {
+    .abilities-layout {
+        grid-template-columns: minmax(0, 599px);
+        margin-top: 40px;
+    }
+    .abilities-summary {
+        width: min(497px, 100%);
+        justify-self: center;
+    }
+    .abilities-actions {
+        margin-top: 60px;
+    }
+}
+@media (max-width: 620px) {
+    .abilities-method h2 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .abilities-method {
+        min-height: 0;
+        padding: 20px;
+    }
+    .abilities-method .race-options {
+        margin-top: 32px;
+        gap: 8px;
+    }
+    .abilities-method .race-options button {
+        font-size: 14px;
+    }
+    .abilities-derived {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .abilities-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin-top: 40px;
+        gap: 48px 16px;
+    }
+    .ability-card label {
+        font-size: 18px;
+    }
+    .ability-card input {
+        width: min(111px, 85%);
+    }
+}

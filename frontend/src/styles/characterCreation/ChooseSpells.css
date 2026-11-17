@@ -1,0 +1,217 @@
+/* Figma 221:641, desktop frame 1920 x 1080. */
+.creation-wizard-page .creation-steps {
+    width: min(1557px, 100%);
+    transform: none;
+}
+.creation-wizard-page .creation-steps ol {
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+}
+.creation-spells-page {
+    padding-top: 23px;
+    padding-bottom: 49px;
+}
+.spells-layout {
+    display: grid;
+    grid-template-columns: 497px 593px 593px;
+    column-gap: 21px;
+    align-items: start;
+    width: 1752px;
+    margin: 88.17px auto 0;
+    transform: translateX(50px);
+}
+.spells-summary {
+    padding-top: 2px;
+}
+.spells-summary .skills-identity {
+    margin-left: 11px;
+    width: 459px;
+}
+.spells-summary h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    overflow-wrap: anywhere;
+}
+.spells-summary.skills-summary .abilities-derived {
+    margin-top: 33px;
+}
+.spells-picker {
+    display: flex;
+    flex-direction: column;
+    min-height: 757px;
+    padding: 15px 27px 40px 20px;
+}
+.spells-picker h2 {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 0 16px;
+}
+.spells-cantrips {
+    margin-top: 3px;
+}
+.spells-picker .skills-choices button {
+    justify-content: flex-start;
+}
+.creation-page .spells-picker .skills-choices button {
+    height: auto;
+    padding: 10px 8px;
+}
+.creation-page .spells-picker .skills-choices button span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 6px;
+    overflow-wrap: anywhere;
+}
+.spells-picker .skills-count {
+    margin-top: auto;
+    padding-top: 24px;
+}
+.spells-level-one {
+    margin-left: 27px;
+    width: 593px;
+    padding: 15px 17px 40px 29px;
+}
+.spells-level-one h2 {
+    margin-bottom: 0;
+}
+.spells-subtitle {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 0 18px;
+}
+.spells-level-one .skills-choices {
+    gap: 23px 21px;
+}
+.spells-level-one .skills-choices button {
+    min-height: 94px;
+}
+.spells-level-one .skills-choices button:disabled {
+    cursor: default;
+}
+.spells-actions {
+    margin-top: 37px;
+}
+@media (max-width: 1850px) {
+    .spells-layout {
+        width: 100%;
+        transform: none;
+        grid-template-columns: minmax(280px, 497px) repeat(2, minmax(0, 593px));
+        gap: 24px;
+    }
+    .spells-summary .skills-identity {
+        width: 100%;
+        margin-left: 0;
+    }
+    .spells-level-one {
+        margin-left: 0;
+        width: auto;
+    }
+    .spells-picker .skills-choices {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .spells-picker .skills-choices strong {
+        font-size: 20px;
+        line-height: 28px;
+        overflow-wrap: anywhere;
+    }
+}
+@media (max-width: 1250px) {
+    .spells-layout {
+        grid-template-columns: repeat(2, minmax(0, 593px));
+        margin-top: 40px;
+    }
+    .spells-summary {
+        grid-column: 1 / -1;
+        justify-self: center;
+        width: min(497px, 100%);
+    }
+}
+@media (max-width: 760px) {
+    .creation-wizard-page .creation-steps ol {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .spells-layout {
+        grid-template-columns: minmax(0, 593px);
+        justify-content: center;
+        gap: 32px;
+    }
+    .spells-picker {
+        min-height: 0;
+        padding: 20px 16px 32px;
+    }
+    .spells-picker h2 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .spells-subtitle {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .spells-picker .skills-count {
+        margin-top: 24px;
+        padding-top: 0;
+    }
+    .spells-picker .skills-choices strong {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .spells-summary h1 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+    .spells-summary .skills-identity {
+        min-height: 0;
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 420px) {
+    .spells-picker .skills-choices {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    .spells-picker .skills-choices button {
+        min-height: 90px;
+    }
+}
+.spells-summary .skills-abilities {
+    margin-top: 23px;
+}
+.spells-level-one .skills-choices button:disabled {
+    min-height: 82px;
+}
+
+.creation-page.creation-mobile-design .spells-picker .skills-choices {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 10px;
+}
+.creation-page.creation-mobile-design .spells-picker .description-info {
+    max-width: 100%;
+}
+.creation-page.creation-mobile-design .spells-picker .skills-choices button {
+    width: 100%;
+    height: 110px;
+    min-height: 0;
+    padding: 6px 10px;
+    justify-content: center;
+}
+.creation-page.creation-mobile-design
+    .spells-picker
+    .skills-choices
+    button
+    strong {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+@media (max-width: 620px) {
+    .creation-page.creation-mobile-design .spells-picker .skills-choices {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}

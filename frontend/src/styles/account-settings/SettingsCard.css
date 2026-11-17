@@ -1,0 +1,41 @@
+.settings-card {
+    position: relative;
+    width: 100%;
+    max-width: 340px;
+    box-sizing: border-box;
+    background-color: rgba(18, 18, 16, 0.88);
+    border-radius: 18px;
+    padding: 24px 28px 28px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+}
+
+.settings-card-wide {
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 28px 32px 32px;
+}
+
+.settings-card-title {
+    margin: 0 0 18px;
+    text-align: center;
+    color: #cfe0c3;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.settings-card-wide .settings-card-title {
+    margin: 0 0 6px;
+}
+
+.settings-card-with-leading .settings-card-title {
+    padding-inline: 40px;
+}
+
+@media (max-width: 480px) {
+    .settings-card,
+    .settings-card-wide {
+        padding: 20px 16px 24px;
+    }
+}

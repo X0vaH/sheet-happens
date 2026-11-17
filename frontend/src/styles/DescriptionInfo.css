@@ -1,0 +1,63 @@
+.description-info {
+    position: relative;
+    min-width: 0;
+    display: flex;
+}
+.description-info > button:first-child {
+    width: 100%;
+    padding-right: 42px !important;
+}
+.description-info > .description-info-button {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    display: grid;
+    place-items: center;
+    justify-content: center !important;
+    width: 32px !important;
+    height: 32px !important;
+    min-height: 32px !important;
+    padding: 0 !important;
+    border: 1px solid #40798c;
+    border-radius: 50%;
+    background: #cfe0c3;
+    color: #1f363d;
+    font:
+        italic 700 18px/1 Georgia,
+        serif;
+    cursor: pointer;
+}
+.description-info-button:focus-visible {
+    outline: 3px solid #70a9a1;
+    outline-offset: 2px;
+}
+.description-info-tooltip {
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 1000;
+    overflow-y: auto;
+    padding: 12px;
+    border: 2px solid #40798c;
+    border-radius: 10px;
+    background: #70a9a1;
+    color: #fff;
+    font:
+        400 14px/20px Inter,
+        sans-serif;
+    text-align: left;
+    overflow-wrap: anywhere;
+    white-space: pre-line;
+}
+.description-info-tooltip p {
+    margin: 6px 0 0;
+}
+
+@media (min-width: 761px) and (hover: hover) and (pointer: fine) {
+    .description-info > .description-info-button {
+        display: none;
+    }
+
+    .description-info > button:first-child {
+        padding-right: 8px !important;
+    }
+}
